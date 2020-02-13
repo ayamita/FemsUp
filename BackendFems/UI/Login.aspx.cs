@@ -23,7 +23,7 @@ namespace BackendFems.UI
             
             if (string.IsNullOrEmpty(txt_correo.Value) || string.IsNullOrEmpty(txt_contra.Value))
             {
-                Response.Write("<script>alert('Deben de capturar los campo Email y Contraseña')</script>");
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Espera!', 'Deben de capturar el Email y  laContraseña ', 'warning')</script>");
             }
             else
             {                             
@@ -32,7 +32,7 @@ namespace BackendFems.UI
                 var json = new WebClient().DownloadString(sUrlRequest);
                 if(json == "\"[{ mensaje : '1' }]\"" || json == "\"[{ mensaje : '1' }]\"")
                 {
-                    Response.Write("<script>alert('El correo o contraseña son incorrectas, intente de nuevo')</script>");                    
+                    ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Error!', 'El correo o contraseña son incorrectas, intente de nuevo!', 'error')</script>");      
                 }                                
                 else
                 {

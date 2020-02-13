@@ -152,6 +152,7 @@
     <Content Include="ResourseLogin\vendor\select2\select2.min.css" />
     <Content Include="ResourseLogin\vendor\select2\select2.min.js" />
     <Content Include="Resourse\css\font-face.css" />
+    <Content Include="Resourse\css\sweetalert.css" />
     <Content Include="Resourse\css\theme.css" />
     <Content Include="Resourse\fonts\poppins\poppins-v5-latin-100.eot" />
     <Content Include="Resourse\fonts\poppins\poppins-v5-latin-100.ttf" />
@@ -225,6 +226,8 @@
     <Content Include="Resourse\fonts\poppins\poppins-v5-latin-regular.ttf" />
     <Content Include="Resourse\fonts\poppins\poppins-v5-latin-regular.woff" />
     <Content Include="Resourse\fonts\poppins\poppins-v5-latin-regular.woff2" />
+    <Content Include="Resourse\js\sweetalert.js" />
+    <Content Include="Resourse\js\sweetalert.min.js" />
     <Content Include="Resourse\vendor\font-awesome-4.7\fonts\fontawesome-webfont.eot" />
     <Content Include="Resourse\vendor\font-awesome-4.7\fonts\fontawesome-webfont.ttf" />
     <Content Include="Resourse\vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff" />

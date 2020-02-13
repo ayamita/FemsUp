@@ -6,7 +6,7 @@
         <form runat="server"><br /><br /><br /><br />
             <div class="col-lg-12">
                 <div class="card">
-                    <div class="card-header"><strong>Usuarios por Autorizar</strong><small> Form</small></div>
+                    <div class="card-header"><strong>Usuarios por Autorizar </strong><small> Form</small></div>
                     <div class="card-body card-block">
                         <div class="row form-group">
                             <div class="col col-md-2"><label for="text-input" class=" form-control-label">Id:</label></div>

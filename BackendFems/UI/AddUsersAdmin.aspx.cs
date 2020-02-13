@@ -17,7 +17,7 @@ namespace BackendFems.UI
         protected void Page_Load(object sender, EventArgs e)
         {
             Radiom.Checked = false;
-            Radiof.Checked = false;
+            Radiof.Checked = true;
             Grid();         
         }
         public void Grid()
@@ -86,7 +86,7 @@ namespace BackendFems.UI
                 + "&nombre=" + txt_Nombre.Value + "&apellido=" + txt_apellido.Value + "&telefono=" + txt_telefono.Value
             + "&sexo=" + usu.Sexo + "&curp=" + txt_curp.Value + "&fechanacimiento=" + fecha + "&fotoperfil=" + foto;
             var json = new WebClient().DownloadString(sUrlRequest);
-            Response.Write("<script>alert('El usuario ha sido Aprobado')</script>");
+            ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'El usuario ha sido creado correctamente ', 'success')</script>");                       
             Grid();
             limpiar();
         }

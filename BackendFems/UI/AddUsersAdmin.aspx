@@ -6,29 +6,29 @@
         <form runat="server"><br /><br /><br /><br />
             <div class="col-lg-12">
                 <div class="card">
-                    <div class="card-header"><strong>Crear Usuarios</strong><small> Form</small></div>
+                    <div class="card-header"><strong>Crear Usuarios Administrativos </strong><small> Form</small></div>
                     <div class="card-body card-block">     
                         <div class="row form-group">
                             <div class="col col-md-2"><label for="text-input" class=" form-control-label">ID:</label></div>
-                            <div class="col-12 col-md-4"><input type="text" ID="txt_id" runat="server"  name="text-input" placeholder="ID" class="form-control" disabled/></div>
+                            <div class="col-12 col-md-4"><input type="text" ID="txt_id" runat="server"  name="text-input" placeholder="ID" class="form-control" disabled /></div>
                         </div>     
                         <div class="row form-group">                
                             <div class="col col-md-2"><label for="text-input" class=" form-control-label">Correo:</label></div>
-                            <div class="col-12 col-md-4"><input type="email" ID="txt_correo" runat="server"  name="text-input" placeholder="Correo" class="form-control" /></div>
+                            <div class="col-12 col-md-4"><input type="email" ID="txt_correo" runat="server"  name="text-input" placeholder="Correo" class="form-control"  required="required" oninvalid="setCustomValidity('Ingrese una Correo')" oninput="setCustomValidity('')" maxlength="30" /></div>
                             <div class="col col-md-2"><label for="text-input" class=" form-control-label">Contraseña:</label></div>
-                            <div class="col-12 col-md-4"><input type="password" ID="txt_contra" runat="server"  name="text-input" placeholder="Contraseña" class="form-control" /></div>
+                            <div class="col-12 col-md-4"><input type="password" ID="txt_contra" runat="server"  name="text-input" placeholder="Contraseña" class="form-control" required="required" oninvalid="setCustomValidity('Ingrese una Contraseña')" oninput="setCustomValidity('')" maxlength="20" /></div>
                         </div>                      
                         <div class="row form-group">
                             <div class="col col-md-2"><label for="text-input" class=" form-control-label">Nombre:</label></div>
-                            <div class="col-12 col-md-4"><input type="text" ID="txt_Nombre" runat="server"  name="text-input" placeholder="Nombre de usuario" class="form-control" /></div>
+                            <div class="col-12 col-md-4"><input type="text" ID="txt_Nombre" runat="server"  name="text-input" placeholder="Nombre de usuario" class="form-control" required="required" oninvalid="setCustomValidity('Ingrese un Nombre')" oninput="setCustomValidity('')" maxlength="25" /></div>
                             <div class="col col-md-2"><label for="text-input" class=" form-control-label">Apellidos:</label></div>
-                            <div class="col-12 col-md-4"><input type="text" ID="txt_apellido" runat="server"  name="text-input" placeholder="Apellidos" class="form-control" /></div>
+                            <div class="col-12 col-md-4"><input type="text" ID="txt_apellido" runat="server"  name="text-input" placeholder="Apellidos" class="form-control" required="required" oninvalid="setCustomValidity('Ingrese un Apellido')" oninput="setCustomValidity('')" maxlength="25"/></div>
                         </div>                      
                         <div class="row form-group">                            
                             <div class="col col-md-2"><label for="text-input" class=" form-control-label">Teléfono:</label></div>
-                            <div class="col-12 col-md-4"><input type="text" ID="txt_telefono" runat="server"  name="text-input" placeholder="Teléfono" class="form-control" /></div>
+                            <div class="col-12 col-md-4"><input type="text" ID="txt_telefono" runat="server"  name="text-input" placeholder="Teléfono" class="form-control" required="required" oninvalid="setCustomValidity('Ingrese un Télefono')" oninput="setCustomValidity('')" maxlength="10"/></div>
                             <div class="col col-md-2"><label for="text-input" class=" form-control-label">Curp:</label></div>
-                            <div class="col-12 col-md-4"><input type="text" ID="txt_curp" runat="server"  name="text-input" placeholder="Curp" class="form-control" /></div>
+                            <div class="col-12 col-md-4"><input type="text" ID="txt_curp" runat="server"  name="text-input" placeholder="Curp" class="form-control" required="required" oninvalid="setCustomValidity('Ingrese un CURP')" oninput="setCustomValidity('')" maxlength="18"/></div>
                         </div>                                                                                                                                                    
                         <div class="row form-group">
                             <div class="col col-md-2"><label for="text-input" class=" form-control-label">Sexo:</label></div>

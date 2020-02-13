@@ -30,6 +30,9 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="../ResourseLogin/css/util.css">
 	<link rel="stylesheet" type="text/css" href="../ResourseLogin/css/main.css">
+	 <link href="../Resourse/css/sweetalert.css" rel="stylesheet" />
+    <script src="../Resourse/js/sweetalert.min.js" type="text/javascript"></script>
+    <script src="../Resourse/js/sweetalert.js" type="text/javascript"></script>
 <!--===============================================================================================-->
 
     <asp:ContentPlaceHolder ID="head" runat="server">

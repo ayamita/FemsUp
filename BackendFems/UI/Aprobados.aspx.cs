@@ -79,15 +79,15 @@ namespace BackendFems.UI
         {
             if (string.IsNullOrEmpty(txt_Id.Value))
             {
-                Response.Write("<script>alert('Debe seleccionar un usuario')</script>");
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Espera!', 'Debes seleccionar un registro!', 'warning')</script>");                
             }
             else
             {
                 usu.Id = int.Parse(txt_Id.Value);
                 int estatus = 2; //Cambiara el estatus a Rechazado
-                string sUrlRequest = "https://localhost:44317/Service.asmx/UpUserStatus?iduser=" + usu.Id + "&estatus=" + estatus;
+                string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/service.asmx/UpUserStatus?iduser=" + usu.Id + "&estatus=" + estatus;
                 var json = new WebClient().DownloadString(sUrlRequest);
-                Response.Write("<script>alert('El usuario ha sido Rechazado')</script>");
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'El registro ha sido rechazado correctamente ', 'success')</script>");
             }
             Grid();
             limpiar();
