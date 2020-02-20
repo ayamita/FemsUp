@@ -151,6 +151,7 @@
     <Content Include="ResourseLogin\vendor\select2\select2.js" />
     <Content Include="ResourseLogin\vendor\select2\select2.min.css" />
     <Content Include="ResourseLogin\vendor\select2\select2.min.js" />
+    <Content Include="Resourse\css\DateTimePicker.css" />
     <Content Include="Resourse\css\font-face.css" />
     <Content Include="Resourse\css\sweetalert.css" />
     <Content Include="Resourse\css\theme.css" />
@@ -226,6 +227,8 @@
     <Content Include="Resourse\fonts\poppins\poppins-v5-latin-regular.ttf" />
     <Content Include="Resourse\fonts\poppins\poppins-v5-latin-regular.woff" />
     <Content Include="Resourse\fonts\poppins\poppins-v5-latin-regular.woff2" />
+    <Content Include="Resourse\images\calendar.png" />
+    <Content Include="Resourse\js\DateTimePicker.js" />
     <Content Include="Resourse\js\sweetalert.js" />
     <Content Include="Resourse\js\sweetalert.min.js" />
     <Content Include="Resourse\vendor\font-awesome-4.7\fonts\fontawesome-webfont.eot" />
@@ -324,6 +327,14 @@
     <Content Include="ResourseLogin\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
     <Content Include="ResourseLogin\vendor\bootstrap\css\bootstrap.css.map" />
     <Content Include="ResourseLogin\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -364,7 +375,6 @@
     <Content Include="Resourse\images\icon\logo-white.png" />
     <Content Include="Resourse\images\icon\logo.png" />
     <Content Include="Resourse\images\icon\Untitled-1.jpg" />
-    <Content Include="Resourse\js\app.js" />
     <Content Include="Resourse\js\main.js" />
     <Content Include="Resourse\vendor\animsition\animsition.min.css" />
     <Content Include="Resourse\vendor\animsition\animsition.min.js" />
@@ -531,10 +541,17 @@
     <Content Include="Resourse\vendor\vector-map\jqvmap.min.css" />
     <Content Include="Resourse\vendor\wow\animate.css" />
     <Content Include="Resourse\vendor\wow\wow.min.js" />
+    <Content Include="Scripts\moment-with-locales.js" />
+    <Content Include="Scripts\moment-with-locales.min.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Scripts\moment.min.js" />
+    <Content Include="Scripts\npm.js" />
     <Content Include="UI\AddUsersAdmin.aspx" />
     <Content Include="UI\Aprobados.aspx" />
+    <Content Include="UI\DashPublicaciones.aspx" />
     <Content Include="UI\Index.aspx" />
     <Content Include="UI\Login.aspx" />
+    <Content Include="UI\prueba.aspx" />
     <Content Include="UI\Rechazados.aspx" />
     <Content Include="UI\PorAutorizar.aspx" />
     <Content Include="Web.config" />
@@ -570,6 +587,13 @@
     <Compile Include="UI\Aprobados.aspx.designer.cs">
       <DependentUpon>Aprobados.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UI\DashPublicaciones.aspx.cs">
+      <DependentUpon>DashPublicaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\DashPublicaciones.aspx.designer.cs">
+      <DependentUpon>DashPublicaciones.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UI\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -583,6 +607,13 @@
     </Compile>
     <Compile Include="UI\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\prueba.aspx.cs">
+      <DependentUpon>prueba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\prueba.aspx.designer.cs">
+      <DependentUpon>prueba.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\Rechazados.aspx.cs">
       <DependentUpon>Rechazados.aspx</DependentUpon>

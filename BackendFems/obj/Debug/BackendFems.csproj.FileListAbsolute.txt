@@ -173,3 +173,39 @@ C:\Users\Angel Yam\Documents\GitHub\WebSite\Website\BackendFems\bin\Newtonsoft.J
 C:\Users\Angel Yam\Documents\GitHub\WebSite\Website\BackendFems\obj\Debug\BackendFems.csprojResolveAssemblyReference.cache
 C:\Users\Angel Yam\Documents\GitHub\WebSite\Website\BackendFems\obj\Debug\BackendFems.dll
 C:\Users\Angel Yam\Documents\GitHub\WebSite\Website\BackendFems\obj\Debug\BackendFems.pdb
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\ApplicationInsights.config
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\roslyn\csc.exe
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\roslyn\vbc.exe
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\BackendFems.dll.config
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\BackendFems.dll
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\BackendFems.pdb
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\Microsoft.AI.Web.dll
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\Microsoft.AI.Web.xml
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\obj\Debug\BackendFems.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\obj\Debug\BackendFems.csproj.CopyComplete
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\obj\Debug\BackendFems.dll
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\obj\Debug\BackendFems.pdb
