@@ -548,10 +548,11 @@
     <Content Include="Scripts\npm.js" />
     <Content Include="UI\AddUsersAdmin.aspx" />
     <Content Include="UI\Aprobados.aspx" />
-    <Content Include="UI\DashPublicaciones.aspx" />
+    <Content Include="UI\Categorias.aspx" />
+    <Content Include="UI\Iframes\PublicCate.aspx" />
     <Content Include="UI\Index.aspx" />
     <Content Include="UI\Login.aspx" />
-    <Content Include="UI\prueba.aspx" />
+    <Content Include="UI\Perfiles.aspx" />
     <Content Include="UI\Rechazados.aspx" />
     <Content Include="UI\PorAutorizar.aspx" />
     <Content Include="Web.config" />
@@ -587,12 +588,19 @@
     <Compile Include="UI\Aprobados.aspx.designer.cs">
       <DependentUpon>Aprobados.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UI\DashPublicaciones.aspx.cs">
-      <DependentUpon>DashPublicaciones.aspx</DependentUpon>
+    <Compile Include="UI\Categorias.aspx.cs">
+      <DependentUpon>Categorias.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UI\DashPublicaciones.aspx.designer.cs">
-      <DependentUpon>DashPublicaciones.aspx</DependentUpon>
+    <Compile Include="UI\Categorias.aspx.designer.cs">
+      <DependentUpon>Categorias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Iframes\PublicCate.aspx.cs">
+      <DependentUpon>PublicCate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Iframes\PublicCate.aspx.designer.cs">
+      <DependentUpon>PublicCate.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -608,12 +616,12 @@
     <Compile Include="UI\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UI\prueba.aspx.cs">
-      <DependentUpon>prueba.aspx</DependentUpon>
+    <Compile Include="UI\Perfiles.aspx.cs">
+      <DependentUpon>Perfiles.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UI\prueba.aspx.designer.cs">
-      <DependentUpon>prueba.aspx</DependentUpon>
+    <Compile Include="UI\Perfiles.aspx.designer.cs">
+      <DependentUpon>Perfiles.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\Rechazados.aspx.cs">
       <DependentUpon>Rechazados.aspx</DependentUpon>

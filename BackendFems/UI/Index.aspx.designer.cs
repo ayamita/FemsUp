@@ -24,12 +24,12 @@ namespace BackendFems.UI
         protected global::System.Web.UI.HtmlControls.HtmlInputText datepicker;
 
         /// <summary>
-        /// Control btn_consultar.
+        /// Control MyIFrame.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_consultar;
+        protected global::System.Web.UI.HtmlControls.HtmlIframe MyIFrame;
     }
 }

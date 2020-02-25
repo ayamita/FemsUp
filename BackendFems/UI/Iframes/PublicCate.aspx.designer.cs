@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace BackendFems.UI
+namespace BackendFems.UI.Iframes
 {
 
 
-    public partial class DashPublicaciones
+    public partial class PublicCate
     {
 
         /// <summary>
