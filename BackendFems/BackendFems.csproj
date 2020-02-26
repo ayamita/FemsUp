@@ -550,7 +550,6 @@
     <Content Include="UI\Aprobados.aspx" />
     <Content Include="UI\Categorias.aspx" />
     <Content Include="UI\Grafica.aspx" />
-    <Content Include="UI\Iframes\PublicCate.aspx" />
     <Content Include="UI\Index.aspx" />
     <Content Include="UI\Login.aspx" />
     <Content Include="UI\Perfiles.aspx" />
@@ -602,13 +601,6 @@
     </Compile>
     <Compile Include="UI\Grafica.aspx.designer.cs">
       <DependentUpon>Grafica.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Iframes\PublicCate.aspx.cs">
-      <DependentUpon>PublicCate.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UI\Iframes\PublicCate.aspx.designer.cs">
-      <DependentUpon>PublicCate.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

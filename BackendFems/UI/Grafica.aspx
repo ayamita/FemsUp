@@ -5,11 +5,32 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>    
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" ></script>
-    <script src="https://www.google.com/jsapi"></script>
+    <title></title>        
+
+    <!-- Fontfaces CSS-->
+    <link href="../Resourse/css/font-face.css" rel="stylesheet" media="all"/>
+    <link href="../Resourse/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all"/>
+    <link href="../Resourse/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all"/>
+    <link href="../Resourse/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all"/>
+
+    <!-- Bootstrap CSS-->
+    <link href="../Resourse/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all"/>
+
+    <!-- Vendor CSS-->    
+    <link href="../Resourse/vendor/animsition/animsition.min.css" rel="stylesheet" media="all"/>
+    <link href="../Resourse/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all"/>
+    <link href="../Resourse/vendor/wow/animate.css" rel="stylesheet" media="all"/>
+    <link href="../Resourse/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all"/>
+    <link href="../Resourse/vendor/slick/slick.css" rel="stylesheet" media="all"/>
+    <link href="../Resourse/vendor/select2/select2.min.css" rel="stylesheet" media="all"/>
+    <link href="../Resourse/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all"/>
+
+    <!-- Main CSS-->
+    <link href="../Resourse/css/theme.css" rel="stylesheet" media="all"/>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
     <link rel="stylesheet" href="/resources/demos/style.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" ></script>
+    <script src="https://www.google.com/jsapi"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
    
@@ -156,40 +177,57 @@
 
 </head>
 <body>
-    <form id="form1" name="form1" runat="server">    
-        <p>Date: <input type="text" id="from" /></p>
-        <p>Date: <input type="text" id="to" /></p>
-        <button type="button" class="btn btn-primary" onclick="fecha()">Buscar</button>
-
-         <!-- STATISTIC-->
-        <section class="statistic statistic2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="statistic__item statistic__item--green">
-                        <input type="text" class="number" name="publicaciones" id="publicaciones" style="border: none;"/>
-                        <span class="desc">Publicaciones</span>
-                        <div class="icon">
-                            <i class="zmdi zmdi-account-o"></i>
+    <form id="form1" name="form1" runat="server">   
+        <div class="row">
+            <div class="col-lg-3">
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        <strong>Filtar por Fecha</strong>
+                    </div>
+                    <div class="card-body card-block">                
+                        <div class="form-group">
+                            <label for="exampleInputName2" class="pr-1  form-control-label">Fecha inicio:</label>
+                            <input type="text" id="from" placeholder="Jane Doe" required="" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputName2" class="pr-1  form-control-label">Fecha final:</label>
+                            <input type="text" id="to" placeholder="Jane Doe" required="" class="form-control"/>
+                        </div>              
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary" onclick="fecha()">Buscar</button>                
+                    </div>
+                </div>
+            </div>     
+        </div>           
+        <!-- STATISTIC-->
+            <section class="statistic statistic2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="statistic__item statistic__item--green">
+                                <input type="text" class="number" name="publicaciones" id="publicaciones" style="background: transparent; color:#fff";/>
+                                <span class="desc">Publicaciones</span>
+                            <div class="icon">
+                                <i class="zmdi zmdi-account-o"></i>
+                            </div>
                         </div>
                     </div>
-                </div>                       
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="statistic__item statistic__item--green">
-                        <input type="text" class="number" name="solicitudes" id="solicitudes" style="border: none;"/>
-                        <span class="desc">Publicaciones Solicitadas</span>
-                        <div class="icon">
-                            <i class="zmdi zmdi-account-o"></i>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="statistic__item statistic__item--orange">
+                            <input type="text" class="number" name="solicitudes" id="solicitudes" style="background: transparent; color:#fff;"/>
+                            <span class="desc">Publicaciones Solicitadas</span>
+                            <div class="icon">
+                                <i class="zmdi zmdi-shopping-cart"></i>
+                            </div>
                         </div>
-                    </div>
-                </div>                       
+                    </div>                        
+                </div>
             </div>
-        </div>
-    </section>
-        <!-- END STATISTIC-->       
-        
+        </section>
+        <!-- END STATISTIC-->                
         <div id="piechart_div"></div>                                                                   	                           
     </form>
 </body>
