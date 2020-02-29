@@ -229,8 +229,12 @@
     <Content Include="Resourse\fonts\poppins\poppins-v5-latin-regular.woff2" />
     <Content Include="Resourse\images\calendar.png" />
     <Content Include="Resourse\js\DateTimePicker.js" />
+    <Content Include="Resourse\js\Insidencias.js" />
+    <Content Include="Resourse\js\Publicaciones.js" />
     <Content Include="Resourse\js\sweetalert.js" />
     <Content Include="Resourse\js\sweetalert.min.js" />
+    <Content Include="Resourse\js\TipoUsuario.js" />
+    <Content Include="Resourse\js\TOP.js" />
     <Content Include="Resourse\vendor\font-awesome-4.7\fonts\fontawesome-webfont.eot" />
     <Content Include="Resourse\vendor\font-awesome-4.7\fonts\fontawesome-webfont.ttf" />
     <Content Include="Resourse\vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff" />
@@ -549,12 +553,16 @@
     <Content Include="UI\AddUsersAdmin.aspx" />
     <Content Include="UI\Aprobados.aspx" />
     <Content Include="UI\Categorias.aspx" />
-    <Content Include="UI\Grafica.aspx" />
+    <Content Include="UI\Grafic\Insidencias.aspx" />
+    <Content Include="UI\Grafic\Publicaciones.aspx" />
+    <Content Include="UI\Grafic\TipoUsuario.aspx" />
     <Content Include="UI\Index.aspx" />
     <Content Include="UI\Login.aspx" />
     <Content Include="UI\Perfiles.aspx" />
     <Content Include="UI\Rechazados.aspx" />
     <Content Include="UI\PorAutorizar.aspx" />
+    <Content Include="UI\Grafic\Top3.aspx" />
+    <Content Include="UI\TUGrafic.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -595,12 +603,26 @@
     <Compile Include="UI\Categorias.aspx.designer.cs">
       <DependentUpon>Categorias.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UI\Grafica.aspx.cs">
-      <DependentUpon>Grafica.aspx</DependentUpon>
+    <Compile Include="UI\Grafic\Insidencias.aspx.cs">
+      <DependentUpon>Insidencias.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UI\Grafica.aspx.designer.cs">
-      <DependentUpon>Grafica.aspx</DependentUpon>
+    <Compile Include="UI\Grafic\Insidencias.aspx.designer.cs">
+      <DependentUpon>Insidencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Grafic\Publicaciones.aspx.cs">
+      <DependentUpon>Publicaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Grafic\Publicaciones.aspx.designer.cs">
+      <DependentUpon>Publicaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Grafic\TipoUsuario.aspx.cs">
+      <DependentUpon>TipoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Grafic\TipoUsuario.aspx.designer.cs">
+      <DependentUpon>TipoUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -636,6 +658,20 @@
     </Compile>
     <Compile Include="UI\PorAutorizar.aspx.designer.cs">
       <DependentUpon>PorAutorizar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Grafic\Top3.aspx.cs">
+      <DependentUpon>Top3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Grafic\Top3.aspx.designer.cs">
+      <DependentUpon>Top3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TUGrafic.aspx.cs">
+      <DependentUpon>TUGrafic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\TUGrafic.aspx.designer.cs">
+      <DependentUpon>TUGrafic.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
