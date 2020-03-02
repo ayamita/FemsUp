@@ -553,16 +553,19 @@
     <Content Include="UI\AddUsersAdmin.aspx" />
     <Content Include="UI\Aprobados.aspx" />
     <Content Include="UI\Categorias.aspx" />
+    <Content Include="UI\GraficPublica.aspx" />
+    <Content Include="UI\GraficSolici.aspx" />
     <Content Include="UI\Grafic\Insidencias.aspx" />
     <Content Include="UI\Grafic\Publicaciones.aspx" />
     <Content Include="UI\Grafic\TipoUsuario.aspx" />
     <Content Include="UI\Index.aspx" />
+    <Content Include="UI\GraficInsidencia.aspx" />
     <Content Include="UI\Login.aspx" />
     <Content Include="UI\Perfiles.aspx" />
     <Content Include="UI\Rechazados.aspx" />
     <Content Include="UI\PorAutorizar.aspx" />
     <Content Include="UI\Grafic\Top3.aspx" />
-    <Content Include="UI\TUGrafic.aspx" />
+    <Content Include="UI\GraficTU.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -603,6 +606,20 @@
     <Compile Include="UI\Categorias.aspx.designer.cs">
       <DependentUpon>Categorias.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UI\GraficPublica.aspx.cs">
+      <DependentUpon>GraficPublica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\GraficPublica.aspx.designer.cs">
+      <DependentUpon>GraficPublica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GraficSolici.aspx.cs">
+      <DependentUpon>GraficSolici.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\GraficSolici.aspx.designer.cs">
+      <DependentUpon>GraficSolici.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UI\Grafic\Insidencias.aspx.cs">
       <DependentUpon>Insidencias.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -630,6 +647,13 @@
     </Compile>
     <Compile Include="UI\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GraficInsidencia.aspx.cs">
+      <DependentUpon>GraficInsidencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\GraficInsidencia.aspx.designer.cs">
+      <DependentUpon>GraficInsidencia.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -666,12 +690,12 @@
     <Compile Include="UI\Grafic\Top3.aspx.designer.cs">
       <DependentUpon>Top3.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UI\TUGrafic.aspx.cs">
-      <DependentUpon>TUGrafic.aspx</DependentUpon>
+    <Compile Include="UI\GraficTU.aspx.cs">
+      <DependentUpon>GraficTU.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UI\TUGrafic.aspx.designer.cs">
-      <DependentUpon>TUGrafic.aspx</DependentUpon>
+    <Compile Include="UI\GraficTU.aspx.designer.cs">
+      <DependentUpon>GraficTU.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

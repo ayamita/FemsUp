@@ -16,10 +16,10 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>02/20/2020 16:44:52</publishTime>
     </File>
     <File Include="bin/BackendFems.dll">
-      <publishTime>02/21/2020 08:26:31</publishTime>
+      <publishTime>01/03/2020 19:15:57</publishTime>
     </File>
     <File Include="bin/BackendFems.pdb">
-      <publishTime>02/21/2020 08:26:31</publishTime>
+      <publishTime>01/03/2020 19:15:57</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>02/20/2020 16:44:54</publishTime>
@@ -85,7 +85,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>02/20/2020 16:44:54</publishTime>
     </File>
     <File Include="MasterPage/Backend.Master">
-      <publishTime>02/21/2020 08:16:10</publishTime>
+      <publishTime>01/03/2020 18:41:13</publishTime>
     </File>
     <File Include="MasterPage/Login.Master">
       <publishTime>02/20/2020 16:44:52</publishTime>
@@ -426,14 +426,26 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="Resourse/js/DateTimePicker.js">
       <publishTime>02/20/2020 16:44:52</publishTime>
     </File>
+    <File Include="Resourse/js/Insidencias.js">
+      <publishTime>03/01/2020 21:05:55</publishTime>
+    </File>
     <File Include="Resourse/js/main.js">
       <publishTime>02/20/2020 16:44:52</publishTime>
+    </File>
+    <File Include="Resourse/js/Publicaciones.js">
+      <publishTime>03/01/2020 21:04:51</publishTime>
     </File>
     <File Include="Resourse/js/sweetalert.js">
       <publishTime>02/20/2020 16:44:52</publishTime>
     </File>
     <File Include="Resourse/js/sweetalert.min.js">
       <publishTime>02/20/2020 16:44:52</publishTime>
+    </File>
+    <File Include="Resourse/js/TipoUsuario.js">
+      <publishTime>03/01/2020 21:04:51</publishTime>
+    </File>
+    <File Include="Resourse/js/TOP.js">
+      <publishTime>03/01/2020 21:04:51</publishTime>
     </File>
     <File Include="Resourse/vendor/animsition/animsition.min.css">
       <publishTime>02/20/2020 16:44:52</publishTime>
@@ -1401,11 +1413,35 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="UI/Categorias.aspx">
       <publishTime>02/21/2020 07:49:42</publishTime>
     </File>
+    <File Include="UI/Grafic/Insidencias.aspx">
+      <publishTime>01/03/2020 18:19:07</publishTime>
+    </File>
+    <File Include="UI/Grafic/Publicaciones.aspx">
+      <publishTime>01/03/2020 18:29:04</publishTime>
+    </File>
+    <File Include="UI/Grafic/TipoUsuario.aspx">
+      <publishTime>01/03/2020 17:20:41</publishTime>
+    </File>
+    <File Include="UI/Grafic/Top3.aspx">
+      <publishTime>03/01/2020 21:09:43</publishTime>
+    </File>
+    <File Include="UI/GraficInsidencia.aspx">
+      <publishTime>01/03/2020 18:48:21</publishTime>
+    </File>
+    <File Include="UI/GraficPublica.aspx">
+      <publishTime>01/03/2020 18:49:36</publishTime>
+    </File>
+    <File Include="UI/GraficSolici.aspx">
+      <publishTime>01/03/2020 18:54:24</publishTime>
+    </File>
+    <File Include="UI/GraficTU.aspx">
+      <publishTime>01/03/2020 18:25:19</publishTime>
+    </File>
     <File Include="UI/Iframes/PublicCate.aspx">
       <publishTime>02/20/2020 17:49:28</publishTime>
     </File>
     <File Include="UI/Index.aspx">
-      <publishTime>02/20/2020 17:54:16</publishTime>
+      <publishTime>02/25/2020 21:25:25</publishTime>
     </File>
     <File Include="UI/Login.aspx">
       <publishTime>02/20/2020 16:44:53</publishTime>
@@ -1423,7 +1459,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>11/02/2020 23:25:58</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>02/21/2020 08:26:32</publishTime>
+      <publishTime>03/01/2020 21:10:30</publishTime>
     </File>
   </ItemGroup>
 </Project>

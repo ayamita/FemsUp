@@ -73,6 +73,32 @@
                         </li>
                         <li class="active has-sub">
                             <a class="js-arrow" href="#">
+                                <i class="fas fa-tachometer-alt"></i>DashBoard
+                                <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="../UI/GraficTU.aspx">
+                                        <i class="fas fa-tachometer-alt"></i>Tipos de usuario</a>
+                                </li>
+                                <li>
+                                    <a href="../UI/GraficPublica.aspx">
+                                        <i class="fas fa-tachometer-alt"></i>Publicaciones</a>
+                                </li>
+                                <li>
+                                    <a href="../UI/GraficInsidencia.aspx">
+                                        <i class="fas fa-tachometer-alt"></i>Insidencias</a>
+                                </li>
+                                <li>
+                                    <a href="../UI/GraficSolici.aspx">
+                                        <i class="fas fa-tachometer-alt"></i>Solicitudes</a>
+                                </li>                                
+                            </ul>
+                        </li>       
+                        <li class="active has-sub">
+                            <a class="js-arrow" href="#">
                                 <i class="fas fa-tachometer-alt"></i>Usuario
                                 <span class="arrow">
                                     <i class="fas fa-angle-down"></i>
