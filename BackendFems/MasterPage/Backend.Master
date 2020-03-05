@@ -34,7 +34,7 @@
     <link href="../Resourse/vendor/vector-map/jqvmap.min.css" rel="stylesheet" media="all"/>
     
     <!-- Main CSS-->
-    <link href="../Resourse/css/theme.css" rel="stylesheet" media="all"/>
+    <link href="../Resourse/css/themes.css" rel="stylesheet" media="all"/>
     <link href="../Resourse/css/sweetalert.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" media="screen" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/base/jquery-ui.css"/>
 
@@ -53,7 +53,7 @@
         <aside class="menu-sidebar2">
             <div class="logo">
                 <a href="#">
-                    <img src="../Resourse/images/icon/logo-white.png" alt="Cool Admin" />
+                    <img src="../Resourse/images/icon/logo-fems2.png" alt="Cool Admin" />
                 </a>
             </div>
             <div class="menu-sidebar2__content js-scrollbar1">
@@ -68,12 +68,12 @@
                     <ul class="list-unstyled navbar__list">
                         <li>
                             <a href="../UI/Index.aspx">
-                                <i class="fas fa-chart-bar"></i>Inicio</a>
+                                <i class=""></i>Inicio</a>
                             
                         </li>
                         <li class="active has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-tachometer-alt"></i>DashBoard
+                                <i class="fas fa-chart-bar"></i>DashBoard
                                 <span class="arrow">
                                     <i class="fas fa-angle-down"></i>
                                 </span>
@@ -81,25 +81,25 @@
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
                                     <a href="../UI/GraficTU.aspx">
-                                        <i class="fas fa-tachometer-alt"></i>Tipos de usuario</a>
+                                        <i class=""></i>Tipos de usuario</a>
                                 </li>
                                 <li>
                                     <a href="../UI/GraficPublica.aspx">
-                                        <i class="fas fa-tachometer-alt"></i>Publicaciones</a>
+                                        <i class=""></i>Publicaciones</a>
                                 </li>
                                 <li>
                                     <a href="../UI/GraficInsidencia.aspx">
-                                        <i class="fas fa-tachometer-alt"></i>Insidencias</a>
+                                        <i class=""></i>Insidencias</a>
                                 </li>
                                 <li>
                                     <a href="../UI/GraficSolici.aspx">
-                                        <i class="fas fa-tachometer-alt"></i>Solicitudes</a>
+                                        <i class=""></i>Solicitudes</a>
                                 </li>                                
                             </ul>
                         </li>       
                         <li class="active has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-tachometer-alt"></i>Usuario
+                                <i class="fas fa-user"></i>Usuario
                                 <span class="arrow">
                                     <i class="fas fa-angle-down"></i>
                                 </span>
@@ -107,25 +107,25 @@
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
                                     <a href="../UI/PorAutorizar.aspx">
-                                        <i class="fas fa-tachometer-alt"></i>Por Autorizar</a>
+                                        <i class=""></i>Por Autorizar</a>
                                 </li>
                                 <li>
                                     <a href="../UI/Aprobados.aspx">
-                                        <i class="fas fa-tachometer-alt"></i>Aprobados</a>
+                                        <i class=""></i>Aprobados</a>
                                 </li>
                                 <li>
                                     <a href="../UI/Rechazados.aspx">
-                                        <i class="fas fa-tachometer-alt"></i>Rechazados</a>
+                                        <i class=""></i>Rechazados</a>
                                 </li>
                                 <li>
                                     <a href="../UI/AddUsersAdmin.aspx">
-                                        <i class="fas fa-tachometer-alt"></i>Administrativos</a>
+                                        <i class=""></i>Administrativos</a>
                                 </li>                                
                             </ul>
                         </li>                                          
                         <li class="active has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-tachometer-alt"></i>Modulos
+                                <i class="fas fa-desktop"></i>Modulos
                                 <span class="arrow">
                                     <i class="fas fa-angle-down"></i>
                                 </span>
@@ -133,11 +133,11 @@
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
                                     <a href="../UI/Categorias.aspx">
-                                        <i class="fas fa-tachometer-alt"></i>Categoría</a>
+                                        <i class=""></i>Categoría</a>
                                 </li>
                                 <li>
                                     <a href="../UI/Perfiles.aspx">
-                                        <i class="fas fa-tachometer-alt"></i>Perfil</a>
+                                        <i class=""></i>Perfil</a>
                                 </li>                                
                             </ul>
                         </li>                                          
@@ -161,7 +161,7 @@
                         <div class="header-wrap2">
                             <div class="logo d-block d-lg-none">
                                 <a href="#">
-                                    <img src="../Resourse/images/icon/logo-white.png" alt="CoolAdmin" />
+                                    <!--<img src="../Resourse/images/icon/logo-fems.png" alt="CoolAdmin" />-->
                                 </a>
                             </div>
                             <div class="header-button2">
@@ -259,7 +259,7 @@
             <aside class="menu-sidebar2 js-right-sidebar d-block d-lg-none">
                 <div class="logo">
                     <a href="#">
-                        <img src="../Resourse/images/icon/logo-white.png" alt="Cool Admin" />
+                        <img src="../Resourse/images/icon/logo-fems2.png" alt="Cool Admin" />
                     </a>
                 </div>
                 <div class="menu-sidebar2__content js-scrollbar2">

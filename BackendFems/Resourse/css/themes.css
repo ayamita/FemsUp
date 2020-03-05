@@ -1564,10 +1564,10 @@ section {
     font-size: 14px;
 }
 
-.account-dropdown__footer a:hover {
-    background: #4272d7;
-    color: #fff;
-}
+    .account-dropdown__footer a:hover {
+        background: #61210B;
+        color: #fff;
+    }
 
 .account-dropdown__footer a i {
     line-height: 1;
@@ -2129,21 +2129,21 @@ section {
     z-index: 1000;
 }
 
-.menu-sidebar2 .logo {
-    height: 75px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background: #365cad;
-    padding: 0 35px;
-}
+    .menu-sidebar2 .logo {
+        height: 75px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: #f2d194;
+        padding: 0 35px;
+    }
 
 @media (max-width: 991px) {
     .menu-sidebar2 {
@@ -2249,20 +2249,20 @@ section {
     color: #4272d7;
 }
 
-.navbar-sidebar2 .navbar__list li a {
-    font-size: 16px;
-    color: #555;
-    display: block;
-    padding: 18px 35px;
-    border-bottom: 1px solid #f2f2f2;
-}
+    .navbar-sidebar2 .navbar__list li a {
+        font-size: 16px;
+        color: #BF7E6F;
+        display: block;
+        padding: 18px 35px;
+        border-bottom: 1px solid #f2f2f2;
+    }
 
 .navbar-sidebar2 .navbar__list li a > i {
     margin-right: 20px;
 }
 
 .navbar-sidebar2 .navbar__list li.active > a {
-    color: #4272d7;
+    color: #BF7E6F;
 }
 
 .navbar-sidebar2 .navbar__sub-list {
@@ -2300,7 +2300,7 @@ section {
 
 .header-desktop2 {
     height: 75px;
-    background: #4272d7;
+    background: #f2d194;
     position: fixed;
     z-index: 1001;
     top: 0;

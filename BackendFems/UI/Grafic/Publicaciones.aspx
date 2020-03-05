@@ -26,7 +26,7 @@
     <link href="../../Resourse/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all"/>
 
     <!-- Main CSS-->
-    <link href="../../Resourse/css/theme.css" rel="stylesheet" media="all"/>
+    <link href="../../Resourse/css/themes.css" rel="stylesheet" media="all"/>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
     <link rel="stylesheet" href="/resources/demos/style.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" ></script>
@@ -55,19 +55,13 @@
                     <div class="col-md-6 col-lg-3">
                         <div class="statistic__item statistic__item--green">
                                 <input type="text" class="number" name="publicaciones" id="publicaciones" style="background: transparent; color:#fff";/>
-                                <span class="desc"> Total de Publicaciones</span>
-                            <div class="icon">
-                                <i class="zmdi zmdi-account-o"></i>
-                            </div>
+                                <span class="desc"> Total de Publicaciones</span>                          
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="statistic__item statistic__item--orange">
                             <input type="text" class="number" name="solicitudes" id="solicitudes" style="background: transparent; color:#fff;"/>
-                            <span class="desc">Total de Categorías</span>
-                            <div class="icon">
-                                <i class="zmdi zmdi-shopping-cart"></i>
-                            </div>
+                            <span class="desc">Total de Categorías</span>                       
                         </div>
                     </div>     
                     
