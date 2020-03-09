@@ -45,7 +45,7 @@
 })();
 
 function carga_todos() {
-    var url = "http://alexander14-001-site1.dtempurl.com/Service.asmx/GetPerfilUsu";
+    var url = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetPerfilUsu";
     $.getJSON(url, {
         format: "json"
     })
@@ -57,7 +57,7 @@ function carga_todos() {
         });
 
 
-    var url2 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/GetAllPerfiles";
+    var url2 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetAllPerfiles";
     $.getJSON(url2, {
         format: "json"
     })
@@ -68,7 +68,7 @@ function carga_todos() {
             console.log("Request Failed:" + err);
         });
 
-    var url3 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/GetAllUsers";
+    var url3 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetAllUsers";
     $.getJSON(url3, {
         format: "json"
     })

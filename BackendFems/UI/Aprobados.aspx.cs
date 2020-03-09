@@ -85,7 +85,7 @@ namespace BackendFems.UI
             {
                 usu.Id = int.Parse(txt_Id.Value);
                 int estatus = 2; //Cambiara el estatus a Rechazado
-                string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/service.asmx/UpUserStatus?iduser=" + usu.Id + "&estatus=" + estatus;
+                string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/service.asmx/WebUpUserStatus?iduser=" + usu.Id + "&estatus=" + estatus;
                 var json = new WebClient().DownloadString(sUrlRequest);
                 ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'El registro ha sido rechazado correctamente ', 'success')</script>");
             }

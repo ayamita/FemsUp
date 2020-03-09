@@ -22,7 +22,7 @@ namespace BackendFems.UI
         }
         public void Grid()
         {
-            string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/service.asmx/GetUsersAdmin";
+            string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/service.asmx/WebGetUsers";
             var json = new WebClient().DownloadString(sUrlRequest);
             DataTable dt = (DataTable)JsonConvert.DeserializeObject(json, (typeof(DataTable)));            
             dgvDatos.DataSource = dt;
@@ -82,7 +82,7 @@ namespace BackendFems.UI
             {
                 usu.Sexo = "F";
             }
-            string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/service.asmx/AddUsuarioAdmin?email=" + txt_correo.Value + "&pass=" + txt_contra.Value
+            string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/service.asmx/WebAddUsuarioAdmin?email=" + txt_correo.Value + "&pass=" + txt_contra.Value
                 + "&nombre=" + txt_Nombre.Value + "&apellido=" + txt_apellido.Value + "&telefono=" + txt_telefono.Value
             + "&sexo=" + usu.Sexo + "&curp=" + txt_curp.Value + "&fechanacimiento=" + fecha + "&fotoperfil=" + foto;
             var json = new WebClient().DownloadString(sUrlRequest);

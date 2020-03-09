@@ -45,7 +45,7 @@
 })();
 
 function carga_todos() {
-    var url = "http://alexander14-001-site1.dtempurl.com/Service.asmx/GetUsuariosPubliTOP";
+    var url = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetUsuariosPubliTOP";
     $.getJSON(url, {
         format: "json"
     })

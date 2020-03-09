@@ -44,7 +44,7 @@ function charts(data, ChartType) {
 })();
 
 function carga_todos() {
-    var url = "http://alexander14-001-site1.dtempurl.com/Service.asmx/GetUsuariosReportan";
+    var url = "http://alexander14-001-site1.dtempurl.com/service.asmx/WebUsuariosReportan";
     $.getJSON(url, {
         format: "json"
     })
@@ -55,7 +55,7 @@ function carga_todos() {
             console.log("Request Failed:" + err);
         });
 
-    var url2 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/GetUsuariosReportados";
+    var url2 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetUsuariosReportados";
     $.getJSON(url2, {
         format: "json"
     })
@@ -69,7 +69,7 @@ function carga_todos() {
 
 function correo() {
     if ($("#from").val() != "") {                
-        var url2 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/GetCorreoReportados";
+        var url2 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetCorreoReportados";
         $.getJSON(url2, {
             correo: $("#from").val(),            
             format: "json"
@@ -82,7 +82,7 @@ function correo() {
                 console.log("Request Failed:" + err);
             });
 
-        var url3 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/GetCorreoReportan";
+        var url3 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetCorreoReportan";
         $.getJSON(url3, {
             correo: $("#from").val(),            
             format: "json"

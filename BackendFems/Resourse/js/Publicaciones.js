@@ -48,14 +48,55 @@
 
         chart.draw(data, options);
         }
+
+
+
+        //Grafica doble    
+        google.charts.load('current', { 'packages': ['bar'] });
+        google.charts.setOnLoadCallback(drawStuff);
+        function drawStuff() {
+            var data = new google.visualization.arrayToDataTable([
+                ['Galaxy', 'Distance', 'Brightness'],
+                ['Canis Major Dwarf', 8000, 23.3],
+                ['Sagittarius Dwarf', 24000, 4.5],
+                ['Ursa Major II Dwarf', 30000, 14.3],
+                ['Lg. Magellanic Cloud', 50000, 0.9],
+                ['Bootes I', 60000, 13.1]
+            ]);
+
+            var options = {
+                width: 800,
+                chart: {
+                    title: 'Nearby galaxies',
+                    subtitle: 'distance on the left, brightness on the right'
+                },
+                bars: 'horizontal', // Required for Material Bar Charts.
+                series: {
+                    0: { axis: 'distance' }, // Bind series 0 to an axis named 'distance'.
+                    1: { axis: 'brightness' } // Bind series 1 to an axis named 'brightness'.
+                },
+                axes: {
+                    x: {
+                        distance: { label: 'parsecs' }, // Bottom x-axis.
+                        brightness: { side: 'top', label: 'apparent magnitude' } // Top x-axis.
+                    }
+                }
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('dual_x_div'));
+            chart.draw(data, options);
+        };
     }
+
+   
+    
 
     (function () {
             carga_todos();
     })();
 
     function carga_todos() {
-        var url = "http://alexander14-001-site1.dtempurl.com/Service.asmx/GetPublicCategory";
+        var url = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetPublicCategory";
         $.getJSON(url, {
             format: "json"
         })
@@ -66,7 +107,8 @@
                 console.log("Request Failed:" + err);
             });
 
-        var url1 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/GetPublicCategory";
+        //Cambiar
+        var url1 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetPublicCategory";
         $.getJSON(url1, {
             format: "json"
         })
@@ -77,7 +119,7 @@
                 console.log("Request Failed:" + err);
             });
 
-        var url2 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/GetAllCategory";
+        var url2 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetAllCategory";
         $.getJSON(url2, {
             format: "json"
         })
@@ -88,7 +130,7 @@
                 console.log("Request Failed:" + err);
             });
 
-        var url3 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/GetAllPublic";
+        var url3 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetAllPublic";
         $.getJSON(url3, {
             format: "json"
         })
@@ -102,7 +144,7 @@
 
     function fecha() {
         if ($("#from").val() != "" && $("#to").val() != "") {
-            var url = "http://alexander14-001-site1.dtempurl.com/Service.asmx/GetPublicCategoryDate";
+            var url = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetPublicCategoryDate";
             $.getJSON(url, {
                 inicio: $("#from").val(),
                 final: $("#to").val(),
@@ -115,7 +157,7 @@
                     console.log("Request Failed:" + err);
                 });
 
-            var url1 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/GetPublicCategoryDate";
+            var url1 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetPublicCategoryDate";
             $.getJSON(url1, {
                 inicio: $("#from").val(),
                 final: $("#to").val(),
@@ -128,7 +170,7 @@
                     console.log("Request Failed:" + err);
                 });
 
-            var url2 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/GetAllCategoryByDate";
+            var url2 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetAllCategoryByDate";
             $.getJSON(url2, {
                 inicio: $("#from").val(),
                 final: $("#to").val(),
@@ -141,7 +183,7 @@
                     console.log("Request Failed:" + err);
                 });
 
-            var url3 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/GetAllPublicByDate";
+            var url3 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetAllPublicByDate";
             $.getJSON(url3, {
                 inicio: $("#from").val(),
                 final: $("#to").val(),
