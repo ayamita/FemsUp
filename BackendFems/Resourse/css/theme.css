@@ -2128,7 +2128,7 @@ section {
     transition: all 0.5s ease;
     z-index: 1000;
 }
-
+/*aqui*/
     .menu-sidebar2 .logo {
         height: 75px;
         display: -webkit-box;
@@ -2141,7 +2141,7 @@ section {
         -moz-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        background: #f2d194;
+        background: #424242;
         padding: 0 35px;
     }
 
@@ -2248,10 +2248,10 @@ section {
 .navbar-sidebar2 .navbar__list li:hover > a {
     color: #4272d7;
 }
-
+/*Aqui*/
     .navbar-sidebar2 .navbar__list li a {
         font-size: 16px;
-        color: #BF7E6F;
+        color: #848484;
         display: block;
         padding: 18px 35px;
         border-bottom: 1px solid #f2f2f2;
@@ -2260,10 +2260,10 @@ section {
 .navbar-sidebar2 .navbar__list li a > i {
     margin-right: 20px;
 }
-
-.navbar-sidebar2 .navbar__list li.active > a {
-    color: #BF7E6F;
-}
+/*Aqui*/
+    .navbar-sidebar2 .navbar__list li.active > a {
+        color: #848484;
+    }
 
 .navbar-sidebar2 .navbar__sub-list {
     display: none;
@@ -2297,10 +2297,10 @@ section {
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
-
+/*Aqui*/
 .header-desktop2 {
     height: 75px;
-    background: #f2d194;
+    background: #424242;
     position: fixed;
     z-index: 1001;
     top: 0;

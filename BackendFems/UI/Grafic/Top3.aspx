@@ -26,7 +26,7 @@
     <link href="../../Resourse/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all"/>
 
     <!-- Main CSS-->
-    <link href="../../Resourse/css/themes.css" rel="stylesheet" media="all"/>
+    <link href="../../Resourse/css/theme.css" rel="stylesheet" media="all"/>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
     <link rel="stylesheet" href="/resources/demos/style.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" ></script>

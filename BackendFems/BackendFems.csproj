@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -25,6 +26,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <Use64BitIISExpress />
+    <TypeScriptToolsVersion>3.7</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -154,7 +156,7 @@
     <Content Include="Resourse\css\DateTimePicker.css" />
     <Content Include="Resourse\css\font-face.css" />
     <Content Include="Resourse\css\sweetalert.css" />
-    <Content Include="Resourse\css\themes.css" />
+    <Content Include="Resourse\css\theme.css" />
     <Content Include="Resourse\fonts\poppins\poppins-v5-latin-100.eot" />
     <Content Include="Resourse\fonts\poppins\poppins-v5-latin-100.ttf" />
     <Content Include="Resourse\fonts\poppins\poppins-v5-latin-100.woff" />
@@ -231,6 +233,7 @@
     <Content Include="Resourse\js\DateTimePicker.js" />
     <Content Include="Resourse\js\Insidencias.js" />
     <Content Include="Resourse\js\Publicaciones.js" />
+    <Content Include="Resourse\js\Solicitudes.js" />
     <Content Include="Resourse\js\sweetalert.js" />
     <Content Include="Resourse\js\sweetalert.min.js" />
     <Content Include="Resourse\js\TipoUsuario.js" />
@@ -556,6 +559,8 @@
     <Content Include="UI\GraficPublica.aspx" />
     <Content Include="UI\GraficSolici.aspx" />
     <Content Include="UI\Grafic\Insidencias.aspx" />
+    <Content Include="UI\Grafic\JavaScript.js" />
+    <Content Include="UI\Grafic\prue1.aspx" />
     <Content Include="UI\Grafic\Publicaciones.aspx" />
     <Content Include="UI\Grafic\TipoUsuario.aspx" />
     <Content Include="UI\Index.aspx" />
@@ -626,6 +631,13 @@
     </Compile>
     <Compile Include="UI\Grafic\Insidencias.aspx.designer.cs">
       <DependentUpon>Insidencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Grafic\prue1.aspx.cs">
+      <DependentUpon>prue1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Grafic\prue1.aspx.designer.cs">
+      <DependentUpon>prue1.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\Grafic\Publicaciones.aspx.cs">
       <DependentUpon>Publicaciones.aspx</DependentUpon>
@@ -698,12 +710,15 @@
       <DependentUpon>GraficTU.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>

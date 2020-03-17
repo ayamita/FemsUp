@@ -20,8 +20,7 @@
                 var value = jsonData.popularidad;
                 var name = jsonData.nombre;
             data.addRows([[name, value]]);
-        });
-
+            });
         var options = {
             title: "",
             width: 800,
@@ -35,57 +34,16 @@
             datalessRegionColor: '#dedede',
             defaultColor: '#dedede'
         };
-
         var chart;
-        if (c == "ColumnChart") // Column Charts
-            chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
-        else if (c == "PieChart") // Pie Charts
-            chart = new google.visualization.PieChart(document.getElementById('piechart_div'));
+            if (c == "PieChart") // Column Charts
+            chart = new google.visualization.ColumnChart(document.getElementById('piechart_div'));        
         else if (c == "BarChart") // Bar Charts
             chart = new google.visualization.BarChart(document.getElementById('bar_div'));
         else if (c == "GeoChart") // Geo Charts
             chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
-
         chart.draw(data, options);
         }
-
-
-
-        //Grafica doble    
-        google.charts.load('current', { 'packages': ['bar'] });
-        google.charts.setOnLoadCallback(drawStuff);
-        function drawStuff() {
-            var data = new google.visualization.arrayToDataTable([
-                ['Galaxy', 'Distance', 'Brightness'],
-                ['Canis Major Dwarf', 8000, 23.3],
-                ['Sagittarius Dwarf', 24000, 4.5],
-                ['Ursa Major II Dwarf', 30000, 14.3],
-                ['Lg. Magellanic Cloud', 50000, 0.9],
-                ['Bootes I', 60000, 13.1]
-            ]);
-
-            var options = {
-                width: 800,
-                chart: {
-                    title: 'Nearby galaxies',
-                    subtitle: 'distance on the left, brightness on the right'
-                },
-                bars: 'horizontal', // Required for Material Bar Charts.
-                series: {
-                    0: { axis: 'distance' }, // Bind series 0 to an axis named 'distance'.
-                    1: { axis: 'brightness' } // Bind series 1 to an axis named 'brightness'.
-                },
-                axes: {
-                    x: {
-                        distance: { label: 'parsecs' }, // Bottom x-axis.
-                        brightness: { side: 'top', label: 'apparent magnitude' } // Top x-axis.
-                    }
-                }
-            };
-
-            var chart = new google.charts.Bar(document.getElementById('dual_x_div'));
-            chart.draw(data, options);
-        };
+      
     }
 
    

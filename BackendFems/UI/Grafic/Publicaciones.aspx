@@ -26,19 +26,19 @@
     <link href="../../Resourse/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all"/>
 
     <!-- Main CSS-->
-    <link href="../../Resourse/css/themes.css" rel="stylesheet" media="all"/>
+    <link href="../../Resourse/css/theme.css" rel="stylesheet" media="all"/>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
     <link rel="stylesheet" href="/resources/demos/style.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" ></script>
     <script src="https://www.google.com/jsapi"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
+    <script src="../../Resourse/js/Solicitudes.js"></script>
     <script src="../../Resourse/js/Publicaciones.js"></script>
-
+    
 </head>
 <body>
-    <form id="form1" name="form1" runat="server">   
-        <br />
+    <form id="form1" name="form1" runat="server">           
         <h1 style="text-align:center">Publicaciones</h1>        
         <h3 style="text-align:center">Filtrar Publicaciones por rango de fechas </h3>        
         <!-- STATISTIC-->
@@ -73,7 +73,7 @@
         <h2 style="text-align:center">Publicaciones más utilizadas según su categoría </h2>        
         <div id="piechart_div"></div>    
         <h2 style="text-align:center">Publicaciones más utilizadas según su categoría </h2> 
-        <div id="chart_div"></div>            
+        <div id="dual_x_div"></div>            
         <br /><br />       
     </form>
 </body>
