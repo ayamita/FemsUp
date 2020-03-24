@@ -18,20 +18,15 @@ namespace BackendFems.UI
         {
             Radiom.Checked = false;
             Radiof.Checked = false;
-            Grid();
-        }
-
-        protected void Seleccionar_registro(object sender, EventArgs e)
-        {
-            txt_Id.Value = HttpUtility.HtmlDecode(dgvDatos.SelectedRow.Cells[0].Text);
-            txt_correo.Value = HttpUtility.HtmlDecode(dgvDatos.SelectedRow.Cells[1].Text);
-            txt_Nombre.Value = HttpUtility.HtmlDecode(dgvDatos.SelectedRow.Cells[2].Text);
-            txt_apellido.Value = HttpUtility.HtmlDecode(dgvDatos.SelectedRow.Cells[3].Text);
-            txt_telefono.Value = HttpUtility.HtmlDecode(dgvDatos.SelectedRow.Cells[4].Text);
-            usu.Sexo = HttpUtility.HtmlDecode(dgvDatos.SelectedRow.Cells[5].Text);
-            txt_curp.Value = HttpUtility.HtmlDecode(dgvDatos.SelectedRow.Cells[6].Text);
-            txt_tusuario.Value = HttpUtility.HtmlDecode(dgvDatos.SelectedRow.Cells[7].Text);
-            if(usu.Sexo =="M")
+            txt_Id.Value = Request.QueryString["ID"];
+            txt_Nombre.Value = Request.QueryString["Nombres"];
+            txt_apellido.Value = Request.QueryString["Apellidos"];
+            txt_correo.Value = Request.QueryString["Correo"];
+            txt_telefono.Value = Request.QueryString["Telefono"];
+            txt_curp.Value = Request.QueryString["Curp"];
+            txt_tusuario.Value = Request.QueryString["Perfil"];
+            usu.Sexo = Request.QueryString["Sexo"];
+            if (usu.Sexo == "M")
             {
                 Radiom.Checked = true;
                 Radiof.Checked = false;
@@ -41,18 +36,7 @@ namespace BackendFems.UI
                 Radiom.Checked = false;
                 Radiof.Checked = true;
             }
-
-
-        }
-
-        protected void dgv_usuario_RowDataBound(object sender, GridViewRowEventArgs e)
-        {
-            if (e.Row.RowType == DataControlRowType.DataRow)
-            {
-                e.Row.Attributes["onclick"] = Page.ClientScript.GetPostBackClientHyperlink(dgvDatos, "Select$" + e.Row.RowIndex);
-                e.Row.Attributes["style"] = "cursor:pointer";
-            }
-        }
+        }     
 
         protected void btn_Aprobar(object sender, EventArgs e)
         {
@@ -67,20 +51,8 @@ namespace BackendFems.UI
                 string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/service.asmx/WebUpUserStatus?iduser=" + usu.Id + "&estatus=" + estatus;
                 var json = new WebClient().DownloadString(sUrlRequest);
                 ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'El registro ha sido aprobado correctamente ', 'success')</script>");
-            }            
-            Grid();
-            limpiar();
-
-        }
-
-        public void Grid()
-        {
-            int estatus = 3; //Mostrara Usuarios por Aprobar
-            string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/service.asmx/GetUsersEstatus?estatus=" + estatus;
-            var json = new WebClient().DownloadString(sUrlRequest);
-            DataTable dt = (DataTable)JsonConvert.DeserializeObject(json, (typeof(DataTable)));
-            dgvDatos.DataSource = dt;
-            dgvDatos.DataBind();
+            }              
+            limpiar();            
         }
 
         public  void limpiar()
@@ -94,6 +66,8 @@ namespace BackendFems.UI
             Radiom.Checked = false;
             txt_curp.Value = "";
             txt_tusuario.Value = "";
+            //Redirige a la otra pagina
+            Response.Redirect("PorAutori.aspx");
         }
 
         protected void btn_rechazar_Click(object sender, EventArgs e)
@@ -109,9 +83,9 @@ namespace BackendFems.UI
                 string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/service.asmx/WebUpUserStatus?iduser=" + usu.Id + "&estatus=" + estatus;
                 var json = new WebClient().DownloadString(sUrlRequest);
                 ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'El registro ha sido rechazado correctamente ', 'success')</script>");
-            }
-            Grid();
+            }         
             limpiar();
+
         }
 
         protected void btn_limpiar_Click(object sender, EventArgs e)

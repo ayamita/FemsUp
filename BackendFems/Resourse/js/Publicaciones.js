@@ -34,14 +34,15 @@
             datalessRegionColor: '#dedede',
             defaultColor: '#dedede'
         };
-        var chart;
-            if (c == "PieChart") // Column Charts
-            chart = new google.visualization.ColumnChart(document.getElementById('piechart_div'));        
-        else if (c == "BarChart") // Bar Charts
-            chart = new google.visualization.BarChart(document.getElementById('bar_div'));
-        else if (c == "GeoChart") // Geo Charts
-            chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
-        chart.draw(data, options);
+            var chart;
+            if (c == "ColumnChart") // Column Charts
+                chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+            else if (c == "PieChart") // Pie Charts
+                chart = new google.visualization.PieChart(document.getElementById('piechart_div'));
+            else if (c == "BarChart") // Bar Charts
+                chart = new google.visualization.BarChart(document.getElementById('bar_div'));
+            else if (c == "GeoChart") // Geo Charts
+                chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
         }
       
     }
@@ -71,7 +72,7 @@
             format: "json"
         })
             .done(function (data1) {
-                charts(data1, "ColumnChart");
+                charts(data1, "PieChart");
             }).fail(function (jqxhr, textStatus, error) {
                 var err = textStatus + "," + error;
                 console.log("Request Failed:" + err);
@@ -122,7 +123,7 @@
                 format: "json"
             })
                 .done(function (data1) {
-                    charts(data1, "ColumnChart");
+                    charts(data1, "PieChart");
                 }).fail(function (jqxhr, textStatus, error) {
                     var err = textStatus + "," + error;
                     console.log("Request Failed:" + err);

@@ -153,6 +153,7 @@
     <Content Include="ResourseLogin\vendor\select2\select2.js" />
     <Content Include="ResourseLogin\vendor\select2\select2.min.css" />
     <Content Include="ResourseLogin\vendor\select2\select2.min.js" />
+    <Content Include="Resourse\css\cardslider.css" />
     <Content Include="Resourse\css\DateTimePicker.css" />
     <Content Include="Resourse\css\font-face.css" />
     <Content Include="Resourse\css\sweetalert.css" />
@@ -559,14 +560,13 @@
     <Content Include="UI\GraficPublica.aspx" />
     <Content Include="UI\GraficSolici.aspx" />
     <Content Include="UI\Grafic\Insidencias.aspx" />
-    <Content Include="UI\Grafic\JavaScript.js" />
-    <Content Include="UI\Grafic\prue1.aspx" />
     <Content Include="UI\Grafic\Publicaciones.aspx" />
     <Content Include="UI\Grafic\TipoUsuario.aspx" />
     <Content Include="UI\Index.aspx" />
     <Content Include="UI\GraficInsidencia.aspx" />
     <Content Include="UI\Login.aspx" />
     <Content Include="UI\Perfiles.aspx" />
+    <Content Include="UI\PorAutori.aspx" />
     <Content Include="UI\Rechazados.aspx" />
     <Content Include="UI\PorAutorizar.aspx" />
     <Content Include="UI\Grafic\Top3.aspx" />
@@ -632,13 +632,6 @@
     <Compile Include="UI\Grafic\Insidencias.aspx.designer.cs">
       <DependentUpon>Insidencias.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UI\Grafic\prue1.aspx.cs">
-      <DependentUpon>prue1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UI\Grafic\prue1.aspx.designer.cs">
-      <DependentUpon>prue1.aspx</DependentUpon>
-    </Compile>
     <Compile Include="UI\Grafic\Publicaciones.aspx.cs">
       <DependentUpon>Publicaciones.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -680,6 +673,13 @@
     </Compile>
     <Compile Include="UI\Perfiles.aspx.designer.cs">
       <DependentUpon>Perfiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PorAutori.aspx.cs">
+      <DependentUpon>PorAutori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PorAutori.aspx.designer.cs">
+      <DependentUpon>PorAutori.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\Rechazados.aspx.cs">
       <DependentUpon>Rechazados.aspx</DependentUpon>

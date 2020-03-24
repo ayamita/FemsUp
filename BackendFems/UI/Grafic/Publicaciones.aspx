@@ -33,14 +33,14 @@
     <script src="https://www.google.com/jsapi"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
-    <script src="../../Resourse/js/Solicitudes.js"></script>
     <script src="../../Resourse/js/Publicaciones.js"></script>
     
 </head>
 <body>
     <form id="form1" name="form1" runat="server">           
-        <h1 style="text-align:center">Publicaciones</h1>        
-        <h3 style="text-align:center">Filtrar Publicaciones por rango de fechas </h3>        
+        <br /><br /> 
+        <h1 style="text-align:center">Publicaciones</h1>        <br /> 
+        <h3 style="text-align:center">Filtrar por rango de fechas </h3>        
         <!-- STATISTIC-->
           <section class="statistic statistic2">
             <div class="container">
@@ -70,10 +70,8 @@
         </section>        
         <!-- END STATISTIC--> 
         <br /> 
-        <h2 style="text-align:center">Publicaciones más utilizadas según su categoría </h2>        
-        <div id="piechart_div"></div>    
-        <h2 style="text-align:center">Publicaciones más utilizadas según su categoría </h2> 
-        <div id="dual_x_div"></div>            
+        <h2 style="text-align:center">Total de publicaciones realizadas según su categoría </h2>
+        <div id="chart_div"></div>                      
         <br /><br />       
     </form>
 </body>

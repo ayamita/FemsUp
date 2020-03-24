@@ -173,8 +173,6 @@ C:\Users\Angel Yam\Documents\GitHub\WebSite\Website\BackendFems\bin\Newtonsoft.J
 C:\Users\Angel Yam\Documents\GitHub\WebSite\Website\BackendFems\obj\Debug\BackendFems.csprojResolveAssemblyReference.cache
 C:\Users\Angel Yam\Documents\GitHub\WebSite\Website\BackendFems\obj\Debug\BackendFems.dll
 C:\Users\Angel Yam\Documents\GitHub\WebSite\Website\BackendFems\obj\Debug\BackendFems.pdb
-C:\Users\Admin\Documents\GitHub\Website\BackendFems\obj\Debug\BackendFems.dll
-C:\Users\Admin\Documents\GitHub\Website\BackendFems\obj\Debug\BackendFems.pdb
 C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\ApplicationInsights.config
 C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\roslyn\csc.exe
 C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -208,4 +206,6 @@ C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\Microsoft.ApplicationIns
 C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Admin\Documents\GitHub\Website\BackendFems\bin\Newtonsoft.Json.xml
 C:\Users\Admin\Documents\GitHub\Website\BackendFems\obj\Debug\BackendFems.csproj.CopyComplete
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\obj\Debug\BackendFems.dll
+C:\Users\Admin\Documents\GitHub\Website\BackendFems\obj\Debug\BackendFems.pdb
 C:\Users\Admin\Documents\GitHub\Website\BackendFems\obj\Debug\BackendFems.csprojAssemblyReference.cache

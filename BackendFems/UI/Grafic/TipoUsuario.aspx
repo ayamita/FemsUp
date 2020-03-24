@@ -38,7 +38,7 @@
 </head>
 <body>
     <form id="form1" name="form1" runat="server">            
-        <br />
+        <br /> <br />
         <h2 style="text-align:center">Total de usuarios según su categoría</h2>        
         <!-- STATISTIC-->
             <section class="statistic statistic2">
