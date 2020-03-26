@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/Backend.Master" AutoEventWireup="true" CodeBehind="Perfiles.aspx.cs" Inherits="BackendFems.UI.Perfiles" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/Backend.Master" AutoEventWireup="true" CodeBehind="Perfiles.aspx.cs" Inherits="BackendFems.UI.Perfiles" enableEventValidation="false" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -10,7 +10,7 @@
                     <div class="card-body card-block">                        
                         <div class="row form-group">
                             <div class="col col-md-2"><label for="text-input" class=" form-control-label">Id Perfil:</label></div>
-                            <div class="col-12 col-md-4"><input type="text" ID="txtid" runat="server"  name="text-input" placeholder="Id Perfil" class="form-control" /></div>                            
+                            <div class="col-12 col-md-4"><input type="text" ID="txtid" runat="server"  name="text-input" placeholder="Id Perfil" class="form-control" disabled/></div>                            
                         </div>                                                          
                         <div class="row form-group">
                             <div class="col col-md-2"><label for="text-input" class=" form-control-label">Perfiles:</label></div>
@@ -30,13 +30,13 @@
                 <div class="card">                 
                     <div class="card-body card-block">
                         <div class="col-lg-10">
-                            <asp:GridView ID="dgvDatos" runat="server" CellPadding="4" ForeColor="#ffffff" GridLines="None" OnRowDataBound="dgv_perfiles_RowDataBound" OnSelectedIndexChanged="Seleccionar_registro" >
+                            <asp:GridView ID="dgvDatos" runat="server" CellPadding="4" ForeColor="#ffffff" GridLines="None" OnRowDataBound="dgv_perfiles_RowDataBound" OnSelectedIndexChanged="Seleccionar_registro" Width="300px" >
                                 <AlternatingRowStyle BackColor="White" />
-                                <FooterStyle BackColor="#4272d7" Font-Bold="True" ForeColor="White" />
-                                <HeaderStyle BackColor="#4272d7 " Font-Bold="True" ForeColor="White" />
-                                <PagerStyle BackColor="#FFFFFF" ForeColor="#4272d7" HorizontalAlign="Center" />
-                                <RowStyle BackColor="#FFFFFF" ForeColor="#4272d7" />
-                                <SelectedRowStyle BackColor="#BD3D67" Font-Bold="True" ForeColor="#FFFFFF" />
+                                <FooterStyle BackColor="#424242" Font-Bold="True" ForeColor="White" />
+                                <HeaderStyle BackColor="#424242 " Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#FFFFFF" ForeColor="#424242" HorizontalAlign="Center" />
+                                <RowStyle BackColor="#FFFFFF" ForeColor="#424242" />
+                                <SelectedRowStyle BackColor="#424242" Font-Bold="True" ForeColor="#FFFFFF" />
                                 <SortedAscendingCellStyle BackColor="#FDF5AC" />
                                 <SortedAscendingHeaderStyle BackColor="#4D0000" />
                                 <SortedDescendingCellStyle BackColor="#FCF6C0" />

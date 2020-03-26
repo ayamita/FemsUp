@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/Backend.Master" AutoEventWireup="true" CodeBehind="Categorias.aspx.cs" Inherits="BackendFems.UI.Categorias" EnableEventValidation="false"%>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/Backend.Master" AutoEventWireup="true" CodeBehind="Actividades.aspx.cs" Inherits="BackendFems.UI.Estatus"  enableEventValidation="false"  %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -6,15 +6,19 @@
         <form runat="server"><br /><br /><br /><br />
             <div class="col-lg-12">
                 <div class="card">
-                    <div class="card-header"><strong>Categorias </strong><small> Form</small></div>
+                    <div class="card-header"><strong>Actividades </strong><small> Form</small></div>
                     <div class="card-body card-block">                        
                         <div class="row form-group">
-                            <div class="col col-md-2"><label for="text-input" class=" form-control-label">Id Categoría:</label></div>
-                            <div class="col-12 col-md-4"><input type="text" ID="txtid" runat="server"  name="text-input" placeholder="Id Categoría" class="form-control" disabled /></div>                            
-                        </div>                                                          
+                            <div class="col col-md-2"><label for="text-input" class=" form-control-label">Id Actividad:</label></div>
+                            <div class="col-12 col-md-4"><input type="text" ID="txtid" runat="server"  name="text-input" placeholder="Id Actividad" class="form-control" disabled/></div>                            
+                        </div>  
                         <div class="row form-group">
-                            <div class="col col-md-2"><label for="text-input" class=" form-control-label">Categoría:</label></div>
-                            <div class="col-12 col-md-4"><input type="text" ID="txtcate" runat="server"  name="text-input" placeholder="Categoría" class="form-control"  /></div>
+                            <div class="col col-md-2"><label for="text-input" class=" form-control-label">Categoria:</label></div>                            
+                            <div class="col-12 col-md-4"><asp:DropDownList  CssClass="" ID="dropub" runat="server"></asp:DropDownList></div>                                                        
+                        </div>  
+                        <div class="row form-group">
+                            <div class="col col-md-2"><label for="text-input" class=" form-control-label">Actividad:</label></div>
+                            <div class="col-12 col-md-4"><input type="text" ID="txtactividad" runat="server"  name="text-input" placeholder="Activid" class="form-control"  /></div>
                         </div>                                                          
                         <div class="modal-footer">                                                  
                             <asp:Button ID="btn_add" runat="server" Text="Agregar"  class="btn" BackColor="#4272d7" ForeColor="White" OnClick="btn_add_Click"  /> 
@@ -30,7 +34,7 @@
                 <div class="card">                 
                     <div class="card-body card-block">
                         <div class="col-lg-10">
-                            <asp:GridView ID="dgvDatos" runat="server" CellPadding="4" ForeColor="#ffffff" GridLines="None" OnRowDataBound="dgv_categoria_RowDataBound" OnSelectedIndexChanged="Seleccionar_registro" Width="350px" >
+                            <asp:GridView ID="dgvDatos" runat="server" CellPadding="4" ForeColor="#ffffff" GridLines="None" OnRowDataBound="dgv_perfiles_RowDataBound" OnSelectedIndexChanged="Seleccionar_registro" Width="900px" >
                                 <AlternatingRowStyle BackColor="White" />
                                 <FooterStyle BackColor="#424242" Font-Bold="True" ForeColor="White" />
                                 <HeaderStyle BackColor="#424242 " Font-Bold="True" ForeColor="White" />

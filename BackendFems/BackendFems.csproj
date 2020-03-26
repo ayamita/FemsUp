@@ -233,8 +233,7 @@
     <Content Include="Resourse\images\calendar.png" />
     <Content Include="Resourse\js\DateTimePicker.js" />
     <Content Include="Resourse\js\Insidencias.js" />
-    <Content Include="Resourse\js\Publicaciones.js" />
-    <Content Include="Resourse\js\Solicitudes.js" />
+    <Content Include="Resourse\js\public.js" />
     <Content Include="Resourse\js\sweetalert.js" />
     <Content Include="Resourse\js\sweetalert.min.js" />
     <Content Include="Resourse\js\TipoUsuario.js" />
@@ -557,10 +556,11 @@
     <Content Include="UI\AddUsersAdmin.aspx" />
     <Content Include="UI\Aprobados.aspx" />
     <Content Include="UI\Categorias.aspx" />
+    <Content Include="UI\Actividades.aspx" />
     <Content Include="UI\GraficPublica.aspx" />
     <Content Include="UI\GraficSolici.aspx" />
     <Content Include="UI\Grafic\Insidencias.aspx" />
-    <Content Include="UI\Grafic\Publicaciones.aspx" />
+    <Content Include="UI\Grafic\Public.aspx" />
     <Content Include="UI\Grafic\TipoUsuario.aspx" />
     <Content Include="UI\Index.aspx" />
     <Content Include="UI\GraficInsidencia.aspx" />
@@ -611,6 +611,13 @@
     <Compile Include="UI\Categorias.aspx.designer.cs">
       <DependentUpon>Categorias.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UI\Actividades.aspx.cs">
+      <DependentUpon>Actividades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Actividades.aspx.designer.cs">
+      <DependentUpon>Actividades.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UI\GraficPublica.aspx.cs">
       <DependentUpon>GraficPublica.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -632,12 +639,12 @@
     <Compile Include="UI\Grafic\Insidencias.aspx.designer.cs">
       <DependentUpon>Insidencias.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UI\Grafic\Publicaciones.aspx.cs">
-      <DependentUpon>Publicaciones.aspx</DependentUpon>
+    <Compile Include="UI\Grafic\Public.aspx.cs">
+      <DependentUpon>Public.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UI\Grafic\Publicaciones.aspx.designer.cs">
-      <DependentUpon>Publicaciones.aspx</DependentUpon>
+    <Compile Include="UI\Grafic\Public.aspx.designer.cs">
+      <DependentUpon>Public.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\Grafic\TipoUsuario.aspx.cs">
       <DependentUpon>TipoUsuario.aspx</DependentUpon>

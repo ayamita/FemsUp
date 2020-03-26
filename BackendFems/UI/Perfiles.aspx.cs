@@ -15,7 +15,7 @@ namespace BackendFems.UI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Grid();
         }
         protected void dgv_perfiles_RowDataBound(object sender, GridViewRowEventArgs e)
         {
@@ -34,33 +34,44 @@ namespace BackendFems.UI
 
         public void Grid()
         {
-            string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/service.asmx/GetCategorias";
+            string sUrlRequest = "https://localhost:44317/Service.asmx/WebPerfiles";
             var json = new WebClient().DownloadString(sUrlRequest);
             DataTable dt = (DataTable)JsonConvert.DeserializeObject(json, (typeof(DataTable)));
             dgvDatos.DataSource = dt;
-            dgvDatos.DataBind();
-            ocultar_columnas();
-        }
-
-        public void ocultar_columnas()
-        {
-            dgvDatos.HeaderRow.Cells[2].Visible = false;
-
-            for (int i = 0; i < dgvDatos.Rows.Count; i++)
-            {
-                dgvDatos.Rows[i].Cells[2].Visible = false;
-            }
+            dgvDatos.DataBind();     
         }
 
 
         protected void btn_add_Click(object sender, EventArgs e)
         {
-
+            if (string.IsNullOrEmpty(txtperfil.Value))
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Espera!', 'Debes escribir un perfil!', 'warning')</script>");
+            }
+            else
+            {
+                string sUrlRequest = "https://localhost:44317/Service.asmx/WebAddPerfil?perfil=" + txtperfil.Value;
+                var json = new WebClient().DownloadString(sUrlRequest);
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'El perfil ha sido creado correctamente ', 'success')</script>");
+            }
+            Grid();
+            limpiar();
         }
 
         protected void btn_update_Click(object sender, EventArgs e)
         {
-
+            if (string.IsNullOrEmpty(txtid.Value))
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Espera!', 'Debes seleccionar un registro!', 'warning')</script>");
+            }
+            else
+            {
+                string sUrlRequest = "https://localhost:44317/Service.asmx/WebUpdatePerfil?id=" + txtid.Value + "&perfil=" + txtperfil.Value;
+                var json = new WebClient().DownloadString(sUrlRequest);
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'El perfil ha sido modificado correctamente ', 'success')</script>");
+            }
+            Grid();
+            limpiar();
         }
 
         protected void btn_limpiar_Click(object sender, EventArgs e)
@@ -70,7 +81,18 @@ namespace BackendFems.UI
 
         protected void btn_eliminar_Click(object sender, EventArgs e)
         {
-
+            if (string.IsNullOrEmpty(txtid.Value))
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Espera!', 'Debes seleccionar un registro!', 'warning')</script>");
+            }
+            else
+            {                
+                string sUrlRequest = "https://localhost:44317/Service.asmx/WebDeletePerfil?id=" + txtid.Value;
+                var json = new WebClient().DownloadString(sUrlRequest);
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'El perfil ha sido eliminado correctamente ', 'success')</script>");
+            }
+            Grid();
+            limpiar();
         }
 
         public void limpiar()

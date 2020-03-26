@@ -5,13 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace BackendFems.UI
+namespace BackendFems.UI.Grafic
 {
-    public partial class GraficPublica : System.Web.UI.Page
+    public partial class Public : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ifrm.Attributes["src"] = "Grafic/Public.aspx";
+
         }
     }
 }

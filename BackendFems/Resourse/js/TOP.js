@@ -45,12 +45,23 @@
 })();
 
 function carga_todos() {
-    var url = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetUsuariosPubliTOP";
+    var url = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetUsuariosSoliTOP";
     $.getJSON(url, {
         format: "json"
     })
         .done(function (data) {
             charts(data, "PieChart");
+        }).fail(function (jqxhr, textStatus, error) {
+            var err = textStatus + "," + error;
+            console.log("Request Failed:" + err);
+        });
+
+    var url2 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetUsuariosPubliTOP";
+    $.getJSON(url2, {
+        format: "json"
+    })
+        .done(function (data2) {
+            charts(data2, "BarChart");
         }).fail(function (jqxhr, textStatus, error) {
             var err = textStatus + "," + error;
             console.log("Request Failed:" + err);

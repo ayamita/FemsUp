@@ -16,7 +16,7 @@
                             <div class="col col-md-2"><label for="text-input" class=" form-control-label">Correo:</label></div>
                             <div class="col-12 col-md-4"><input type="email" ID="txt_correo" runat="server"  name="text-input" placeholder="Correo" class="form-control"  required="required" oninvalid="setCustomValidity('Ingrese una Correo')" oninput="setCustomValidity('')" maxlength="30" /></div>
                             <div class="col col-md-2"><label for="text-input" class=" form-control-label">Contraseña:</label></div>
-                            <div class="col-12 col-md-4"><input type="password" ID="txt_contra" runat="server"  name="text-input" placeholder="Contraseña" class="form-control" required="required" oninvalid="setCustomValidity('Ingrese una Contraseña')" oninput="setCustomValidity('')" maxlength="20" /></div>
+                            <div class="col-12 col-md-4"><input type="password" ID="txt_contra" runat="server"  name="password" placeholder="Contraseña" class="form-control" required="required" oninvalid="setCustomValidity('Ingrese una Contraseña')" oninput="setCustomValidity('')" maxlength="20" /></div>
                         </div>                      
                         <div class="row form-group">
                             <div class="col col-md-2"><label for="text-input" class=" form-control-label">Nombre:</label></div>
@@ -39,7 +39,7 @@
                         </div>                                                                                  
                         <div class="modal-footer"> 
                             <asp:Button ID="btn_add" runat="server" Text="Agregar"  class="btn" BackColor="#4272d7" ForeColor="White" OnClick="btn_add_Click"  /> 
-                            <asp:Button ID="btn_update" runat="server" Text="Modificar"  class="btn" BackColor="#4272d7" ForeColor="White" />
+                            <asp:Button ID="btn_update" runat="server" Text="Modificar"  class="btn" BackColor="#4272d7" ForeColor="White" OnClick="btn_update_Click" />
                             <asp:Button ID="btn_limpiar" runat="server" Text="Limpiar"  class="btn" BackColor="#4272d7" ForeColor="White" OnClick="btn_limpiar_Click"  /> 
                             <asp:Button ID="btn_eliminar" runat="server" Text="Eliminar"  class="btn" BackColor="#4272d7" ForeColor="White" OnClick="btn_eliminar_Click" /> 
                         </div>                
@@ -51,13 +51,13 @@
                 <div class="card">                 
                     <div class="card-body card-block">
                         <div class="col-lg-10">
-                            <asp:GridView ID="dgvDatos" runat="server" CellPadding="4" ForeColor="#ffffff" GridLines="None" OnRowDataBound="dgvDatos_RowDataBound" OnSelectedIndexChanged="dgvDatos_SelectedIndexChanged">
+                            <asp:GridView ID="dgvDatos" runat="server" CellPadding="4" ForeColor="#ffffff" GridLines="None" OnRowDataBound="dgvDatos_RowDataBound" OnSelectedIndexChanged="dgvDatos_SelectedIndexChanged" Width="950px">
                                 <AlternatingRowStyle BackColor="White" />
-                                <FooterStyle BackColor="#4272d7" Font-Bold="True" ForeColor="White" />
-                                <HeaderStyle BackColor="#4272d7 " Font-Bold="True" ForeColor="White" />
-                                <PagerStyle BackColor="#FFFFFF" ForeColor="#4272d7" HorizontalAlign="Center" />
-                                <RowStyle BackColor="#FFFFFF" ForeColor="#4272d7" />
-                                <SelectedRowStyle BackColor="#BD3D67" Font-Bold="True" ForeColor="#FFFFFF" />
+                                <FooterStyle BackColor="#424242" Font-Bold="True" ForeColor="White" />
+                                <HeaderStyle BackColor="#424242 " Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#FFFFFF" ForeColor="#424242" HorizontalAlign="Center" />
+                                <RowStyle BackColor="#FFFFFF" ForeColor="#424242" />
+                                <SelectedRowStyle BackColor="#424242" Font-Bold="True" ForeColor="#FFFFFF" />
                                 <SortedAscendingCellStyle BackColor="#FDF5AC" />
                                 <SortedAscendingHeaderStyle BackColor="#4D0000" />
                                 <SortedDescendingCellStyle BackColor="#FCF6C0" />

@@ -54,12 +54,34 @@ namespace BackendFems.UI
 
         protected void btn_add_Click(object sender, EventArgs e)
         {
-
+            if (string.IsNullOrEmpty(txtcate.Value))
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Espera!', 'Debes escribir una categoría!', 'warning')</script>");
+            }
+            else
+            {
+                string sUrlRequest = "https://localhost:44317/Service.asmx/WebAddCategory?category=" + txtcate.Value;
+                var json = new WebClient().DownloadString(sUrlRequest);
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'La categoria ha sido creada correctamente ', 'success')</script>");
+            }
+            Grid();
+            limpiar();
         }
 
         protected void btn_update_Click(object sender, EventArgs e)
         {
-
+            if (string.IsNullOrEmpty(txtid.Value))
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Espera!', 'Debes seleccionar un registro!', 'warning')</script>");
+            }
+            else
+            {
+                string sUrlRequest = "https://localhost:44317/Service.asmx/WebUpdateCategor?id=" + txtid.Value + "&category=" + txtcate.Value;
+                var json = new WebClient().DownloadString(sUrlRequest);
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'La categoria ha sido modificada correctamente ', 'success')</script>");
+            }
+            Grid();
+            limpiar();
         }
 
         protected void btn_limpiar_Click(object sender, EventArgs e)
@@ -69,7 +91,18 @@ namespace BackendFems.UI
 
         protected void btn_eliminar_Click(object sender, EventArgs e)
         {
-
+            if (string.IsNullOrEmpty(txtid.Value))
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Espera!', 'Debes seleccionar un registro!', 'warning')</script>");
+            }
+            else
+            {
+                string sUrlRequest = "https://localhost:44317/Service.asmx/WebDeleteCategory?id=" + txtid.Value;
+                var json = new WebClient().DownloadString(sUrlRequest);
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'El perfil ha sido eliminado correctamente ', 'success')</script>");
+            }
+            Grid();
+            limpiar();
         }
 
         public void limpiar()

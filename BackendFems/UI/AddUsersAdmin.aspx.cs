@@ -51,8 +51,8 @@ namespace BackendFems.UI
         protected void dgvDatos_SelectedIndexChanged(object sender, EventArgs e)
         {            
             txt_id.Value = Convert.ToString(HttpUtility.HtmlDecode(dgvDatos.SelectedRow.Cells[0].Text));
-            txt_correo.Value = HttpUtility.HtmlDecode(dgvDatos.SelectedRow.Cells[1].Text);
-            txt_contra.Value = HttpUtility.HtmlDecode(dgvDatos.SelectedRow.Cells[2].Text);
+            txt_correo.Value = HttpUtility.HtmlDecode(dgvDatos.SelectedRow.Cells[1].Text);            
+            txt_contra.Value = HttpUtility.HtmlDecode(dgvDatos.SelectedRow.Cells[2].Text); 
             txt_Nombre.Value = HttpUtility.HtmlDecode(dgvDatos.SelectedRow.Cells[3].Text);
             txt_apellido.Value = HttpUtility.HtmlDecode(dgvDatos.SelectedRow.Cells[4].Text);
             txt_telefono.Value = HttpUtility.HtmlDecode(dgvDatos.SelectedRow.Cells[5].Text);
@@ -71,7 +71,7 @@ namespace BackendFems.UI
         }
 
         protected void btn_add_Click(object sender, EventArgs e)
-        {        
+        {
             string fecha = "20-02-2020 00:00:00";
             string foto = "foto";
             if (Radiom.Checked == true)
@@ -86,7 +86,8 @@ namespace BackendFems.UI
                 + "&nombre=" + txt_Nombre.Value + "&apellido=" + txt_apellido.Value + "&telefono=" + txt_telefono.Value
             + "&sexo=" + usu.Sexo + "&curp=" + txt_curp.Value + "&fechanacimiento=" + fecha + "&fotoperfil=" + foto;
             var json = new WebClient().DownloadString(sUrlRequest);
-            ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'El usuario ha sido creado correctamente ', 'success')</script>");                       
+            ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'El usuario ha sido creado correctamente ', 'success')</script>");
+                          
             Grid();
             limpiar();
         }
@@ -111,7 +112,44 @@ namespace BackendFems.UI
 
         protected void btn_eliminar_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txt_id.Value))
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Espera!', 'Debes seleccionar un registro!', 'warning')</script>");
+            }
+            else
+            {
+                string sUrlRequest = "https://localhost:44317/Service.asmx/WebDeleteUserAdm?id=" + txt_id.Value;
+                var json = new WebClient().DownloadString(sUrlRequest);
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'El usuario ha sido eliminado correctamente ', 'success')</script>");
+            }                        
+            Grid();
+            limpiar();
+        }
 
+        protected void btn_update_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txt_id.Value))
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Espera!', 'Debes seleccionar un registro!', 'warning')</script>");
+            }
+            else
+            {                
+                if (Radiom.Checked == true)
+                {
+                    usu.Sexo = "M";
+                }
+                else
+                {
+                    usu.Sexo = "F";
+                }
+                string sUrlRequest = "https://localhost:44317/Service.asmx/WebUpdateAdmin?id=" + txt_id.Value + "&email=" + txt_correo.Value + "&pass=" + txt_contra.Value
+                    + "&nombres=" + txt_Nombre.Value + "&apellidos=" + txt_apellido.Value + "&telefono=" + txt_telefono.Value
+               + "&curp=" + txt_curp.Value + "&sexo=" + usu.Sexo;
+                var json = new WebClient().DownloadString(sUrlRequest);
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'El usuario ha sido modificado correctamente ', 'success')</script>");
+            }            
+            Grid();
+            limpiar();
         }
     }
 }

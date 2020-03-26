@@ -49,13 +49,13 @@
                 <div class="card">                 
                     <div class="card-body card-block">
                         <div class="col-lg-10">
-                            <asp:GridView ID="dgvDatos" runat="server" CellPadding="4" ForeColor="#ffffff" GridLines="None" OnRowDataBound="dgv_usuario_RowDataBound" OnSelectedIndexChanged="Seleccionar_registro">
+                            <asp:GridView  ID="dgvDatos" runat="server" CellPadding="4" ForeColor="#ffffff" GridLines="None" OnRowDataBound="dgv_usuario_RowDataBound" OnSelectedIndexChanged="Seleccionar_registro" Width="950px">
                                 <AlternatingRowStyle BackColor="White" />
-                                <FooterStyle BackColor="#4272d7" Font-Bold="True" ForeColor="White" />
-                                <HeaderStyle BackColor="#4272d7 " Font-Bold="True" ForeColor="White" />
-                                <PagerStyle BackColor="#FFFFFF" ForeColor="#4272d7" HorizontalAlign="Center" />
-                                <RowStyle BackColor="#FFFFFF" ForeColor="#4272d7" />
-                                <SelectedRowStyle BackColor="#BD3D67" Font-Bold="True" ForeColor="#FFFFFF" />
+                                <FooterStyle BackColor="#424242" Font-Bold="True" ForeColor="White" />
+                                <HeaderStyle BackColor="#424242 " Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#FFFFFF" ForeColor="#424242" HorizontalAlign="Center" />
+                                <RowStyle BackColor="#FFFFFF" ForeColor="#424242" />
+                                <SelectedRowStyle BackColor="#424242" Font-Bold="True" ForeColor="#FFFFFF" />
                                 <SortedAscendingCellStyle BackColor="#FDF5AC" />
                                 <SortedAscendingHeaderStyle BackColor="#4D0000" />
                                 <SortedDescendingCellStyle BackColor="#FCF6C0" />

@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace BackendFems.UI
+namespace BackendFems.UI.Grafic
 {
 
 
-    public partial class Grafica
+    public partial class Public
     {
 
         /// <summary>

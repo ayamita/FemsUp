@@ -80,17 +80,21 @@
                             </a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="../UI/GraficPublica.aspx">
-                                        <i class=""></i>Publicaciones</a>
-                                </li>
-                                <li>
                                     <a href="../UI/GraficInsidencia.aspx">
                                         <i class=""></i>Insidencias</a>
                                 </li>
                                 <li>
+                                    <a href="../UI/GraficPublica.aspx">
+                                        <i class=""></i>Publicaciones</a>
+                                </li>                                
+                                <li>
                                     <a href="../UI/GraficTU.aspx">
                                         <i class=""></i>Tipos de usuario</a>
-                                </li>                                                                                                               
+                                </li>   
+                                <li>
+                                    <a href="../UI/GraficSolici.aspx">
+                                        <i class=""></i>Usuarios Populares</a>
+                                </li>
                             </ul>
                         </li>       
                         <li class="active has-sub">
@@ -112,11 +116,7 @@
                                 <li>
                                     <a href="../UI/Rechazados.aspx">
                                         <i class=""></i>Rechazados</a>
-                                </li>
-                                <li>
-                                    <a href="../UI/AddUsersAdmin.aspx">
-                                        <i class=""></i>Administrativos</a>
-                                </li>                                
+                                </li>                                                            
                             </ul>
                         </li>                                          
                         <li class="active has-sub">
@@ -134,7 +134,15 @@
                                 <li>
                                     <a href="../UI/Perfiles.aspx">
                                         <i class=""></i>Perfil</a>
-                                </li>                                
+                                </li>              
+                                <li>
+                                    <a href="../UI/AddUsersAdmin.aspx">
+                                    <i class=""></i>Administrativos</a>
+                                </li> 
+                                <li>
+                                    <a href="../UI/Actividades.aspx">
+                                    <i class=""></i>Actividades</a>
+                                </li>  
                             </ul>
                         </li>                                          
                         <li class="has-sub">

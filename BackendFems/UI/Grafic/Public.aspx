@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Publicaciones.aspx.cs" Inherits="BackendFems.UI.Grafica" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Public.aspx.cs" Inherits="BackendFems.UI.Grafic.Public" %>
 
 <!DOCTYPE html>
 
@@ -32,18 +32,18 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" ></script>
     <script src="https://www.google.com/jsapi"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
-    <script src="../../Resourse/js/Publicaciones.js"></script>
-    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>     
+    <script src="../../Resourse/js/public.js"></script>    
+
 </head>
 <body>
-    <form id="form1" name="form1" runat="server">           
-        <br /><br /> 
-        <h1 style="text-align:center">Publicaciones</h1>        <br /> 
-        <h3 style="text-align:center">Filtrar por rango de fechas </h3>        
-        <!-- STATISTIC-->
-          <section class="statistic statistic2">
-            <div class="container">
+    <form id="form1" name="form1" runat="server">            
+        <br /> <br /><br />
+        <h2 style="text-align:center">Publicaciones</h2>                   
+        <br />
+        <h3 style="text-align:center">Filtrar publicaciones por fechas</h3>        
+        <section class="statistic statistic2">
+             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-lg-4">                    
                         <label for="exampleInputName2" class="pr-1  form-control-label">Fecha inicio:</label>
@@ -67,13 +67,10 @@
                     
                 </div>
             </div>
-        </section>        
-        <!-- END STATISTIC--> 
-        <br /> 
-        <h2 style="text-align:center">Total de publicaciones realizadas según su categoría </h2>
-        <div id="chart_div"></div>                      
-        <br /><br />       
+        </section>
+        <!-- STATISTIC-->                
+        <h4 style="text-align:center">Publicaciones realizadas según su categoría</h4>
+        <div id="piechart_div"></div>              
     </form>
 </body>
 </html>
-
