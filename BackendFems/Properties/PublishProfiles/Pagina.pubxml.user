@@ -16,10 +16,10 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>02/20/2020 16:44:52</publishTime>
     </File>
     <File Include="bin/BackendFems.dll">
-      <publishTime>01/03/2020 19:15:57</publishTime>
+      <publishTime>03/26/2020 18:38:44</publishTime>
     </File>
     <File Include="bin/BackendFems.pdb">
-      <publishTime>01/03/2020 19:15:57</publishTime>
+      <publishTime>03/26/2020 18:38:44</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>02/20/2020 16:44:54</publishTime>
@@ -85,13 +85,16 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>02/20/2020 16:44:54</publishTime>
     </File>
     <File Include="MasterPage/Backend.Master">
-      <publishTime>01/03/2020 18:41:13</publishTime>
+      <publishTime>03/26/2020 18:27:51</publishTime>
     </File>
     <File Include="MasterPage/Login.Master">
       <publishTime>02/20/2020 16:44:52</publishTime>
     </File>
     <File Include="packages.config">
       <publishTime>02/20/2020 16:44:54</publishTime>
+    </File>
+    <File Include="Resourse/css/cardslider.css">
+      <publishTime>03/18/2020 18:31:02</publishTime>
     </File>
     <File Include="Resourse/css/DateTimePicker.css">
       <publishTime>02/20/2020 16:44:52</publishTime>
@@ -103,7 +106,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>02/20/2020 16:44:52</publishTime>
     </File>
     <File Include="Resourse/css/theme.css">
-      <publishTime>02/20/2020 16:44:52</publishTime>
+      <publishTime>03/10/2020 16:51:02</publishTime>
     </File>
     <File Include="Resourse/fonts/poppins/poppins-v5-latin-100.eot">
       <publishTime>02/20/2020 16:44:52</publishTime>
@@ -427,10 +430,13 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>02/20/2020 16:44:52</publishTime>
     </File>
     <File Include="Resourse/js/Insidencias.js">
-      <publishTime>03/01/2020 21:05:55</publishTime>
+      <publishTime>03/26/2020 00:21:03</publishTime>
     </File>
     <File Include="Resourse/js/main.js">
       <publishTime>02/20/2020 16:44:52</publishTime>
+    </File>
+    <File Include="Resourse/js/public.js">
+      <publishTime>03/26/2020 18:22:37</publishTime>
     </File>
     <File Include="Resourse/js/Publicaciones.js">
       <publishTime>03/01/2020 21:04:51</publishTime>
@@ -442,10 +448,10 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>02/20/2020 16:44:52</publishTime>
     </File>
     <File Include="Resourse/js/TipoUsuario.js">
-      <publishTime>03/01/2020 21:04:51</publishTime>
+      <publishTime>03/06/2020 00:03:28</publishTime>
     </File>
     <File Include="Resourse/js/TOP.js">
-      <publishTime>03/01/2020 21:04:51</publishTime>
+      <publishTime>03/26/2020 01:30:08</publishTime>
     </File>
     <File Include="Resourse/vendor/animsition/animsition.min.css">
       <publishTime>02/20/2020 16:44:52</publishTime>
@@ -1404,62 +1410,71 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="Scripts/npm.js">
       <publishTime>02/20/2020 16:44:53</publishTime>
     </File>
+    <File Include="UI/Actividades.aspx">
+      <publishTime>03/26/2020 15:23:43</publishTime>
+    </File>
     <File Include="UI/AddUsersAdmin.aspx">
-      <publishTime>02/20/2020 16:44:53</publishTime>
+      <publishTime>03/25/2020 13:06:03</publishTime>
     </File>
     <File Include="UI/Aprobados.aspx">
-      <publishTime>02/20/2020 16:44:53</publishTime>
+      <publishTime>03/25/2020 12:30:31</publishTime>
     </File>
     <File Include="UI/Categorias.aspx">
-      <publishTime>02/21/2020 07:49:42</publishTime>
+      <publishTime>03/25/2020 23:55:12</publishTime>
     </File>
     <File Include="UI/Grafic/Insidencias.aspx">
-      <publishTime>01/03/2020 18:19:07</publishTime>
+      <publishTime>03/20/2020 16:34:01</publishTime>
+    </File>
+    <File Include="UI/Grafic/Public.aspx">
+      <publishTime>03/26/2020 01:11:53</publishTime>
     </File>
     <File Include="UI/Grafic/Publicaciones.aspx">
       <publishTime>01/03/2020 18:29:04</publishTime>
     </File>
     <File Include="UI/Grafic/TipoUsuario.aspx">
-      <publishTime>01/03/2020 17:20:41</publishTime>
+      <publishTime>03/20/2020 16:35:30</publishTime>
     </File>
     <File Include="UI/Grafic/Top3.aspx">
-      <publishTime>03/01/2020 21:09:43</publishTime>
+      <publishTime>03/26/2020 01:23:55</publishTime>
     </File>
     <File Include="UI/GraficInsidencia.aspx">
-      <publishTime>01/03/2020 18:48:21</publishTime>
+      <publishTime>03/12/2020 09:40:45</publishTime>
     </File>
     <File Include="UI/GraficPublica.aspx">
-      <publishTime>01/03/2020 18:49:36</publishTime>
+      <publishTime>03/20/2020 16:25:24</publishTime>
     </File>
     <File Include="UI/GraficSolici.aspx">
-      <publishTime>01/03/2020 18:54:24</publishTime>
+      <publishTime>03/26/2020 17:11:58</publishTime>
     </File>
     <File Include="UI/GraficTU.aspx">
-      <publishTime>01/03/2020 18:25:19</publishTime>
+      <publishTime>03/12/2020 09:40:45</publishTime>
     </File>
     <File Include="UI/Iframes/PublicCate.aspx">
       <publishTime>02/20/2020 17:49:28</publishTime>
     </File>
     <File Include="UI/Index.aspx">
-      <publishTime>02/25/2020 21:25:25</publishTime>
+      <publishTime>03/12/2020 09:40:45</publishTime>
     </File>
     <File Include="UI/Login.aspx">
-      <publishTime>02/20/2020 16:44:53</publishTime>
+      <publishTime>03/12/2020 09:40:45</publishTime>
     </File>
     <File Include="UI/Perfiles.aspx">
-      <publishTime>02/21/2020 08:10:33</publishTime>
+      <publishTime>03/25/2020 22:45:52</publishTime>
+    </File>
+    <File Include="UI/PorAutori.aspx">
+      <publishTime>03/20/2020 15:59:56</publishTime>
     </File>
     <File Include="UI/PorAutorizar.aspx">
-      <publishTime>02/20/2020 16:44:53</publishTime>
+      <publishTime>03/20/2020 15:49:28</publishTime>
     </File>
     <File Include="UI/Rechazados.aspx">
-      <publishTime>02/20/2020 16:44:53</publishTime>
+      <publishTime>03/25/2020 12:30:31</publishTime>
     </File>
     <File Include="UI/UsersPorAutorizar.aspx">
       <publishTime>11/02/2020 23:25:58</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/01/2020 21:10:30</publishTime>
+      <publishTime>01/03/2020 21:10:30</publishTime>
     </File>
   </ItemGroup>
 </Project>

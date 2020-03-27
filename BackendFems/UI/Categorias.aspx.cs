@@ -60,7 +60,7 @@ namespace BackendFems.UI
             }
             else
             {
-                string sUrlRequest = "https://localhost:44317/Service.asmx/WebAddCategory?category=" + txtcate.Value;
+                string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebAddCategory?category=" + txtcate.Value;
                 var json = new WebClient().DownloadString(sUrlRequest);
                 ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'La categoria ha sido creada correctamente ', 'success')</script>");
             }
@@ -76,7 +76,7 @@ namespace BackendFems.UI
             }
             else
             {
-                string sUrlRequest = "https://localhost:44317/Service.asmx/WebUpdateCategor?id=" + txtid.Value + "&category=" + txtcate.Value;
+                string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebUpdateCategor?id=" + txtid.Value + "&category=" + txtcate.Value;
                 var json = new WebClient().DownloadString(sUrlRequest);
                 ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'La categoria ha sido modificada correctamente ', 'success')</script>");
             }
@@ -97,7 +97,7 @@ namespace BackendFems.UI
             }
             else
             {
-                string sUrlRequest = "https://localhost:44317/Service.asmx/WebDeleteCategory?id=" + txtid.Value;
+                string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebDeleteCategory?id=" + txtid.Value;
                 var json = new WebClient().DownloadString(sUrlRequest);
                 ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'El perfil ha sido eliminado correctamente ', 'success')</script>");
             }

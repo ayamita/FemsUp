@@ -1,15 +1,24 @@
-﻿
+﻿$(function () {
+    $("#to").datepicker({ dateFormat: 'yy-mm-dd' });
+    $("#from").datepicker({ dateFormat: 'yy-mm-dd' }).bind("change", function () {
+        var minValue = $(this).val();
+        minValue = $.datepicker.parseDate("yy-mm-dd", minValue);
+        minValue.setDate(minValue.getDate() + 1);
+        $("#to").datepicker("option", "minDate", minValue);
+    })
+});   
+
 function charts(data, ChartType) {
     var c = ChartType;
     var jsonData = data;
     google.load("visualization", "1", { packages: ["corechart"], callback: drawVisualization });
     function drawVisualization() {
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Usuarios que reportan');
+        data.addColumn('string', 'Categorias');
         data.addColumn('number', 'Popularidad');
         $.each(jsonData, function (i, jsonData) {
             var value = jsonData.popularidad;
-            var name = jsonData.usuarioreportan;
+            var name = jsonData.nombre;
             data.addRows([[name, value]]);
         });
 
@@ -45,52 +54,76 @@ function charts(data, ChartType) {
 })();
 
 function carga_todos() {
-    var url = "http://alexander14-001-site1.dtempurl.com/service.asmx/WebUsuariosReportan";
+    var url = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetPublicCategory";
     $.getJSON(url, {
         format: "json"
     })
         .done(function (data) {
-            charts(data, "BarChart");
+            charts(data, "PieChart");
         }).fail(function (jqxhr, textStatus, error) {
             var err = textStatus + "," + error;
             console.log("Request Failed:" + err);
         });
-
-    var url2 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetUsuariosReportados";
+    var url2 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetAllCategory";
     $.getJSON(url2, {
         format: "json"
     })
         .done(function (data2) {
-            charts(data2, "ColumnChart");
+            $("#solicitudes").val(data2);
         }).fail(function (jqxhr, textStatus, error) {
             var err = textStatus + "," + error;
             console.log("Request Failed:" + err);
         });
+
+    var url3 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetAllPublic";
+    $.getJSON(url3, {
+        format: "json"
+    })
+        .done(function (data3) {
+            $("#publicaciones").val(data3);
+        }).fail(function (jqxhr, textStatus, error) {
+            var err = textStatus + "," + error;
+            console.log("Request Failed:" + err);
+        }); 
 }
 
-function correo() {
-    if ($("#from").val() != "") {                
-        var url2 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetCorreoReportados";
-        $.getJSON(url2, {
-            correo: $("#from").val(),            
+function fecha() {
+    if ($("#from").val() != "" && $("#to").val() != "") {
+        var url = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetPublicCategoryDate";
+        $.getJSON(url, {
+            inicio: $("#from").val(),
+            final: $("#to").val(),
             format: "json"
         })
-            .done(function (data2) {
-                var result = JSON.stringify(data2) 
-                $("#reportados").val(data2);
+            .done(function (data) {
+                charts(data, "PieChart");
             }).fail(function (jqxhr, textStatus, error) {
                 var err = textStatus + "," + error;
                 console.log("Request Failed:" + err);
             });
 
-        var url3 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetCorreoReportan";
+
+        var url2 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetAllCategoryByDate";
+        $.getJSON(url2, {
+            inicio: $("#from").val(),
+            final: $("#to").val(),
+            format: "json"
+        })
+            .done(function (data2) {
+                $("#solicitudes").val(data2);
+            }).fail(function (jqxhr, textStatus, error) {
+                var err = textStatus + "," + error;
+                console.log("Request Failed:" + err);
+            });
+
+        var url3 = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebGetAllPublicByDate";
         $.getJSON(url3, {
-            correo: $("#from").val(),            
+            inicio: $("#from").val(),
+            final: $("#to").val(),
             format: "json"
         })
             .done(function (data3) {
-                var result = JSON.stringify(data3) 
-                $("#reportes").val(data3);
+                $("#publicaciones").val(data3);
             }).fail(function (jqxhr, textStatus, error) {
                 var err = textStatus + "," + error;
                 console.log("Request Failed:" + err);
@@ -99,5 +132,4 @@ function correo() {
     else {
         carga_todos();
     }
-} 
-
+}    

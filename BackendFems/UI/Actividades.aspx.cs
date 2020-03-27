@@ -38,7 +38,7 @@ namespace BackendFems.UI
 
         public void Grid()
         {
-            string sUrlRequest1= "https://localhost:44317/Service.asmx/GetCategorias";
+            string sUrlRequest1= "http://alexander14-001-site1.dtempurl.com/Service.asmx/GetCategorias";
             var json1 = new WebClient().DownloadString(sUrlRequest1);
             DataTable dt1 = (DataTable)JsonConvert.DeserializeObject(json1, (typeof(DataTable)));
             dropub.DataSource = dt1;
@@ -48,7 +48,7 @@ namespace BackendFems.UI
             dropub.Items.Insert(0, "Seleccionar");
             dropub.SelectedIndex = 0;
 
-            string sUrlRequest = "https://localhost:44317/Service.asmx/WebActividades";
+            string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebActividades";
             var json = new WebClient().DownloadString(sUrlRequest);
             DataTable dt = (DataTable)JsonConvert.DeserializeObject(json, (typeof(DataTable)));
             dgvDatos.DataSource = dt;
@@ -74,7 +74,7 @@ namespace BackendFems.UI
             }
             else
             {
-                string sUrlRequest = "https://localhost:44317/Service.asmx/WebAddActividades?idcate="+ dropub.SelectedValue + "&actividad=" + txtactividad.Value;
+                string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/WebAddActividades?idcate=" + dropub.SelectedValue + "&actividad=" + txtactividad.Value;
                 var json = new WebClient().DownloadString(sUrlRequest);
                 ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'La actividad ha sido creado correctamente ', 'success')</script>");
             }
@@ -90,7 +90,7 @@ namespace BackendFems.UI
             }
             else
             {
-                string sUrlRequest = "https://localhost:44317/Service.asmx/WebUpdateActividad?id=" + txtid.Value + "&idcate=" + dropub.SelectedValue + "&actividades=" + txtactividad.Value;
+                string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebUpdateActividad?id=" + txtid.Value + "&idcate=" + dropub.SelectedValue + "&actividades=" + txtactividad.Value;
                 var json = new WebClient().DownloadString(sUrlRequest);
                 ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'La actividad ha sido modificado correctamente ', 'success')</script>");
             }
@@ -111,7 +111,7 @@ namespace BackendFems.UI
             }
             else
             {
-                string sUrlRequest = "https://localhost:44317/Service.asmx/WebDeleteActividad?id=" + txtid.Value;
+                string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebDeleteActividad?id=" + txtid.Value;
                 var json = new WebClient().DownloadString(sUrlRequest);
                 ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'La actividad ha sido eliminado correctamente ', 'success')</script>");
             }

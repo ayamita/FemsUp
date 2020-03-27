@@ -37,12 +37,10 @@ namespace BackendFems.UI
                 else
                 {
                     DataTable dt = (DataTable)JsonConvert.DeserializeObject(json, (typeof(DataTable)));
-                    if (dt.Rows.Count > 0)
-                    {
-                        Response.Redirect("Index.aspx");
+                    if (dt.Rows.Count > 0)                    
+                        Response.Redirect("GraficPublica.aspx");
                     }
                 }
             }
         }
     }
-}

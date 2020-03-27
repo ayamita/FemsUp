@@ -27,7 +27,7 @@ namespace BackendFems.UI
         public void Grid()
         {
             int estatus = 3; //Mostrara Usuarios por Aprobar
-            string sUrlRequest = "https://localhost:44317/Service.asmx/GetUsersEstatus?estatus=" + estatus;
+            string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/Service.asmx/GetUsersEstatus?estatus=" + estatus;
             var json = new WebClient().DownloadString(sUrlRequest);
             DataTable dt = (DataTable)JsonConvert.DeserializeObject(json, (typeof(DataTable)));
             lstusuarios.DataSource = dt;

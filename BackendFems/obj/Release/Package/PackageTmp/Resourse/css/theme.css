@@ -1564,10 +1564,10 @@ section {
     font-size: 14px;
 }
 
-.account-dropdown__footer a:hover {
-    background: #4272d7;
-    color: #fff;
-}
+    .account-dropdown__footer a:hover {
+        background: #61210B;
+        color: #fff;
+    }
 
 .account-dropdown__footer a i {
     line-height: 1;
@@ -2128,22 +2128,22 @@ section {
     transition: all 0.5s ease;
     z-index: 1000;
 }
-
-.menu-sidebar2 .logo {
-    height: 75px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background: #365cad;
-    padding: 0 35px;
-}
+/*aqui*/
+    .menu-sidebar2 .logo {
+        height: 75px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: #424242;
+        padding: 0 35px;
+    }
 
 @media (max-width: 991px) {
     .menu-sidebar2 {
@@ -2248,22 +2248,22 @@ section {
 .navbar-sidebar2 .navbar__list li:hover > a {
     color: #4272d7;
 }
-
-.navbar-sidebar2 .navbar__list li a {
-    font-size: 16px;
-    color: #555;
-    display: block;
-    padding: 18px 35px;
-    border-bottom: 1px solid #f2f2f2;
-}
+/*Aqui*/
+    .navbar-sidebar2 .navbar__list li a {
+        font-size: 16px;
+        color: #848484;
+        display: block;
+        padding: 18px 35px;
+        border-bottom: 1px solid #f2f2f2;
+    }
 
 .navbar-sidebar2 .navbar__list li a > i {
     margin-right: 20px;
 }
-
-.navbar-sidebar2 .navbar__list li.active > a {
-    color: #4272d7;
-}
+/*Aqui*/
+    .navbar-sidebar2 .navbar__list li.active > a {
+        color: #848484;
+    }
 
 .navbar-sidebar2 .navbar__sub-list {
     display: none;
@@ -2297,10 +2297,10 @@ section {
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
-
+/*Aqui*/
 .header-desktop2 {
     height: 75px;
-    background: #4272d7;
+    background: #424242;
     position: fixed;
     z-index: 1001;
     top: 0;

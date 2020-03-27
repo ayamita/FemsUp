@@ -34,7 +34,7 @@ namespace BackendFems.UI
 
         public void Grid()
         {
-            string sUrlRequest = "https://localhost:44317/Service.asmx/WebPerfiles";
+            string sUrlRequest = "http://alexander14-001-site1.dtempurl.com//Service.asmx/WebPerfiles";
             var json = new WebClient().DownloadString(sUrlRequest);
             DataTable dt = (DataTable)JsonConvert.DeserializeObject(json, (typeof(DataTable)));
             dgvDatos.DataSource = dt;
@@ -50,7 +50,7 @@ namespace BackendFems.UI
             }
             else
             {
-                string sUrlRequest = "https://localhost:44317/Service.asmx/WebAddPerfil?perfil=" + txtperfil.Value;
+                string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebAddPerfil?perfil=" + txtperfil.Value;
                 var json = new WebClient().DownloadString(sUrlRequest);
                 ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'El perfil ha sido creado correctamente ', 'success')</script>");
             }
@@ -66,7 +66,7 @@ namespace BackendFems.UI
             }
             else
             {
-                string sUrlRequest = "https://localhost:44317/Service.asmx/WebUpdatePerfil?id=" + txtid.Value + "&perfil=" + txtperfil.Value;
+                string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebUpdatePerfil?id=" + txtid.Value + "&perfil=" + txtperfil.Value;
                 var json = new WebClient().DownloadString(sUrlRequest);
                 ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'El perfil ha sido modificado correctamente ', 'success')</script>");
             }
@@ -87,7 +87,7 @@ namespace BackendFems.UI
             }
             else
             {                
-                string sUrlRequest = "https://localhost:44317/Service.asmx/WebDeletePerfil?id=" + txtid.Value;
+                string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebDeletePerfil?id=" + txtid.Value;
                 var json = new WebClient().DownloadString(sUrlRequest);
                 ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'El perfil ha sido eliminado correctamente ', 'success')</script>");
             }

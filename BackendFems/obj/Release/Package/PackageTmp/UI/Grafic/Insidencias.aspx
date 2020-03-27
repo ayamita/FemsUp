@@ -38,7 +38,7 @@
 </head>
 <body>
     <form id="form1" name="form1" runat="server">            
-        <br />           
+        <br /> <br />
         <h2 style="text-align:center">Insidencias</h2>                   
         <br />
         <h3 style="text-align:center">Filtrar incidencias de usuario</h3>        
@@ -54,19 +54,13 @@
                     <div class="col-md-6 col-lg-3">
                         <div class="statistic__item statistic__item--green">
                                 <input type="text" class="number" name="reportados" id="reportados" style="background: transparent; color:#fff";/>
-                                <span class="desc"> Insidencias realizadas</span>
-                            <div class="icon">
-                                <i class="zmdi zmdi-account-o"></i>
-                            </div>
+                                <span class="desc"> Insidencias realizadas</span>                        
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="statistic__item statistic__item--orange">
                             <input type="text" class="number" name="reportes" id="reportes" style="background: transparent; color:#fff;"/>
-                            <span class="desc">Insidencias del usuario</span>
-                            <div class="icon">
-                                <i class="zmdi zmdi-shopping-cart"></i>
-                            </div>
+                            <span class="desc">Insidencias del usuario</span>                    
                         </div>
                     </div>     
                     

@@ -37,11 +37,13 @@
 </head>
 <body>
     <form id="form1" name="form1" runat="server">            
-        <br />
+        <br /><br /><br />
         <h2 style="text-align:center">Usuarios Destacados</h2>   
         <br />
         <h3 style="text-align:center">Usuarios con más Solicitudes</h3>   
-        <div id="piechart_div"></div>          
+        <div id="piechart_div"></div>        
+        <h3 style="text-align:center">Usuarios con más Publicaciones</h3>   
+        <div id="bar_div"></div> 
       
     </form>
 </body>

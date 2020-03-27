@@ -118,7 +118,7 @@ namespace BackendFems.UI
             }
             else
             {
-                string sUrlRequest = "https://localhost:44317/Service.asmx/WebDeleteUserAdm?id=" + txt_id.Value;
+                string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebDeleteUserAdm?id=" + txt_id.Value;
                 var json = new WebClient().DownloadString(sUrlRequest);
                 ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Proceso completado', 'El usuario ha sido eliminado correctamente ', 'success')</script>");
             }                        
@@ -142,7 +142,7 @@ namespace BackendFems.UI
                 {
                     usu.Sexo = "F";
                 }
-                string sUrlRequest = "https://localhost:44317/Service.asmx/WebUpdateAdmin?id=" + txt_id.Value + "&email=" + txt_correo.Value + "&pass=" + txt_contra.Value
+                string sUrlRequest = "http://alexander14-001-site1.dtempurl.com/Service.asmx/WebUpdateAdmin?id=" + txt_id.Value + "&email=" + txt_correo.Value + "&pass=" + txt_contra.Value
                     + "&nombres=" + txt_Nombre.Value + "&apellidos=" + txt_apellido.Value + "&telefono=" + txt_telefono.Value
                + "&curp=" + txt_curp.Value + "&sexo=" + usu.Sexo;
                 var json = new WebClient().DownloadString(sUrlRequest);
